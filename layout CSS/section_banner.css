@@ -1,0 +1,20 @@
+#banner__principal{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 8rem;
+    height: 100svh;
+}
+
+.lateral__principal-section{
+    border: 1px solid red;
+    width: 530px;
+    padding-block: 30px;
+    padding-inline: 10px;
+    height: 460px;
+    margin-top: 45px;
+}
+
+#lateral__principal-title{
+    font-size: 2.5rem;
+    padding-bottom: 12px;
+}

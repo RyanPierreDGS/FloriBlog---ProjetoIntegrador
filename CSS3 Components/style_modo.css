@@ -1,0 +1,165 @@
+.light-mode {
+    font-family: Arial, sans-serif;
+    background-color: #ece9e9;
+    color: var(--text-color-light);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    .container {
+        background: #ffff;
+    }
+    .next-btn {
+        background-color: #04335b;
+    }
+    h1 {
+        color: #2e7d32;
+    }
+    h3 {
+        color: rgb(76, 75, 75);
+    }
+    h4 {
+        color: rgb(76, 75, 75);
+    }
+    #toggle-theme {
+        background: rgb(215, 213, 213);
+        color: #2e7d32;
+    }
+    .btn {
+        background-color: #4caf50;
+    }
+}
+
+.dark-mode {
+    font-family: Arial, sans-serif;
+    background-color: #1d1e1e;
+    color: var(--text-color-dark);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    .container {
+        background: #494949;
+    }
+    .next-btn {
+        background-color: #04335b;
+    }
+    #start-btn {
+        background-color: #6486a2;
+    }
+    h1 {
+    color: #6486a2;
+    }
+    h4 {
+        color: rgb(18, 18, 18);
+    }
+    #toggle-theme {
+        background-color: rgb(90, 88, 88, 0.5);
+        color: #6486a2;
+    }
+    .btn {
+        background-color: #6486a2;
+    }
+}
+
+/*#toggle-theme {
+    float: center;
+    font-size: 1em;
+    padding: 1em 1.5em;
+    border-radius: 24px;
+    margin-block: 8px;
+    margin-left: 8px;
+    border: none;
+}*/
+
+/*-----------------Posição do botão de mudar o tema ------------------*/
+#modo_btn {
+    position: relative;
+    right: 350px;
+    top: -310px;
+}
+/*----------------- ////// ------------------*/
+
+.container {
+    width: 560px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 35px;
+    box-shadow: 75px 25px 75px rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+#start-container {
+    max-width: 600px;
+}
+
+#quiz-container {
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 0;
+}
+h4 {
+    text-align: center;
+}
+
+#score {
+    font-size: 1.2em;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+#question {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+.btn     {
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.next-btn {
+    margin-top: 20px;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    display: none;
+}
+
+.next-btn:hover {
+    background-color: #1976d2;
+}
+
+#name-input {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+

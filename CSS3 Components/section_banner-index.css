@@ -1,0 +1,33 @@
+#sec_index-primeira{
+    height: 645px;
+    width: auto;
+    border: 1px solid black;
+}
+
+
+#container_sec-primeira{
+    border: 1px solid red;
+    display: flex;
+    width: 75%;
+    margin-inline: auto;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    justify-content: space-between;
+    margin-block: 10px;
+}
+
+.container_sec-info{
+    border: 1px solid green;
+    padding-block: 2rem;
+    padding-inline: 16px;
+}
+
+.container_sec-info h2 p button{
+    padding: 16px;
+}
+
+
+
+.container_sec-image{
+    border: 1px solid yellow;
+}

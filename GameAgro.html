@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS3 Recursos/CSS3 Componentes/normalize.css">
+    <link rel="stylesheet" type="text/css" href="CSS3 Recursos/CSS3 Componentes/style_layout.css">
+    <link rel="stylesheet" type="text/css" href="CSS3 Components/style_gameagro.css">
+    <link rel="stylesheet" type="text/css" href="CSS3 Components/header_home.css">
+    <link rel="stylesheet" type="text/css" href="CSS3 Components/section_banner.css">
+    <link rel="stylesheet" type="text/css" href="CSS3 Components/style_modo.css">
+    <link rel="stylesheet" type="text/css" href="CSS3 Components/section_game-Game.css">
+    <title>Conheça suas Flores || Sungame </title>
+</head>
+
+<body class="light-mode">
+
+
+
+
+
+
+
+
+    <header id="header">
+        <div class="header__name-logo">
+            <span id="flori">Flori</span><span id="blog">Blog</span>
+        </div>
+        <div id="header__nav-menu">
+            <nav>
+                <ul id="header__menu">
+                    <li>
+                        <a class="header__nav-link" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="header__nav-link" href="#">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a class="header__nav-link" href="GameAgro.html">GameAgro</a>
+                    </li>
+                    <li>
+                        <a class="header__nav-link" href="#">Entre em Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+            <!--<div id="modo_btn">
+                <button id ="toggle-theme">Alterar Modo</button>
+                <script src="script.js"></script>
+            </div>-->
+            <div class="header_modos">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="header_icon" id="toggle-theme">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="header_icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" /></svg>
+        </div>
+    </header>
+
+
+
+
+
+    <main>
+        <section id="container_game">
+    <div class="container">
+        <div id="start-container">
+            <h1>Bem-vindo ao Sungame</h1>
+            <h4>Seu Game favorito sobre Floricultura</h4>
+            <input type="text" id="name-input" placeholder="Digite seu nome">
+            <button id="start-btn" class="btn" onclick="startGame()">Começar</button>
+        </div>
+        <div id="quiz-container" style="display:none;">
+                <h1>Quiz Agro</h1>
+                <h3 id="player-name"></h3>
+                <p id="score">Pontos: 0</p>
+                <div id="question-container">
+                    <h2 id="question"></h2>
+                    <div id="answer-buttons" class="btn-grid">
+                        <button class="btn" onclick="selectAnswer(this)"></button>
+                        <button class="btn" onclick="selectAnswer(this)"></button>
+                        <button class="btn" onclick="selectAnswer(this)"></button>
+                        <button class="btn" onclick="selectAnswer(this)"></button>
+                    </div>
+                </div>
+            <button id="next-btn" class="next-btn" onclick="nextQuestion()">Próxima</button>
+        </div>
+    </div>
+        <script src="script.js"></script>
+        </section>
+    </main>
+</body>
+</html>

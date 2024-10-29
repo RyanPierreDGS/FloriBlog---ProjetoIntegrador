@@ -1,0 +1,36 @@
+
+#container_blog-cards{
+    border: 1px solid black;
+    height: 660px;
+    max-height: 740px;
+    width: 1260px;
+    max-width: 1480px;
+    margin-inline: auto;
+    margin-block: 6rem;
+}
+.card{
+    border: 1px solid red;
+    width: 250px;
+    height: 330px;
+    padding-block: 16px;
+    padding-inline: 15px;
+    margin-inline: 8px;
+    margin-block: 4rem;
+}
+
+.card_image{
+        max-width: 220px;
+        max-height: 110px;
+}
+.card_desc p{
+    text-align: left;
+    padding: 0px;
+    font-size: 0.9rem;
+    margin-left: -1px;
+    margin-top: 6px;
+    border: 1px solid black;
+}
+
+button{
+
+}

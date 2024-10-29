@@ -1,8 +1,6 @@
 button{
-    height: 50px;
-    color: white;
-    background-color: rgb(167, 167, 234);
-    border-radius: 12px;
+    border: none;
+    background: none;
 }
 
 *{

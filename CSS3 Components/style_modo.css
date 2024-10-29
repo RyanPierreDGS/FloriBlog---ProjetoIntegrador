@@ -22,8 +22,7 @@
         color: rgb(76, 75, 75);
     }
     #toggle-theme {
-        background: rgb(215, 213, 213);
-        color: #2e7d32;
+        color: rgba(255, 147, 53, 0.9);
     }
     .btn {
         background-color: #4caf50;
@@ -32,7 +31,7 @@
 
 .dark-mode {
     font-family: Arial, sans-serif;
-    background-color: #1d1e1e;
+    background-color: #2C2E32;
     color: var(--text-color-dark);
     justify-content: center;
     align-items: center;
@@ -55,11 +54,45 @@
         color: rgb(18, 18, 18);
     }
     #toggle-theme {
-        background-color: rgb(90, 88, 88, 0.5);
-        color: #6486a2;
+        color: black;
     }
     .btn {
         background-color: #6486a2;
+    }
+    /*----------modo dark da header */
+    #header{
+        height: 75px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background: rgba(34, 78, 36, 0.71);
+        padding-inline: 10rem;
+        align-items: center;
+    }
+    /*-----------Modo dark da index informações banner */
+    .atencao{
+        color: white;
+        font-size: 0.9rem;
+    }
+    
+    .title_sec{
+        color: white;
+        margin-bottom: 2rem;
+        font-size: 2.2rem;
+        word-spacing: -7px;
+        font-weight: 600;
+    }
+    
+    .desc_sec{
+        color: white;
+        font-size: 1.3rem;
+        margin-block: 1.25rem;
+    
+    }
+    
+    .saiba_mais{
+        font-size: 0.9rem;
+        color: #1976d2;
     }
 }
 

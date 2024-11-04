@@ -1,4 +1,4 @@
-/* .light-mode {
+.light-mode {
   font-family: Arial, sans-serif;
   background-color: #ece9e9;
   color: var(--text-color-light);
@@ -63,7 +63,7 @@
     }
 }
 
-/*#toggle-theme {
+#toggle-theme {
     float: center;
     font-size: 1em;
     padding: 1em 1.5em;
@@ -71,7 +71,7 @@
     margin-block: 8px;
     margin-left: 8px;
     border: none;
-}*/
+}
 
 /*-----------------Posição do botão de mudar o tema ------------------*/
 #modo_btn {

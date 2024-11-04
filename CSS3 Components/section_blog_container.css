@@ -20,6 +20,7 @@
     grid-template-rows: repeat(2, auto);
     overflow: hidden;
     transition: max-height 0.3s ease;
+    box-shadow: 6px 2px 15px gray;
 }
 
 #container_blog-cards.expanded{
@@ -41,6 +42,7 @@
     height: 50px;
     font-size: 3rem;
     color: #FD9C47;
+    text-shadow: 5px 5px 10px gray;
 }
 
 #container_blog-cards h2{
@@ -49,6 +51,7 @@
 }
 .card{
     border: 1px solid rgba(98, 99, 71, 0.2);
+    background: white;
     width: 250px;
     height: 330px;
     padding-block: 16px;
@@ -60,6 +63,7 @@
 
 .card_title{
     font-size: 1.1rem;
+    line-height: 22px;
     text-align: left;
     margin-left: 6px;
     margin-bottom: 4px;

@@ -1,6 +1,14 @@
-.light-mode {
+/*----------------- botão de mudar o tema ------------------*/
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
   font-family: Arial, sans-serif;
-  background-color: #ece9e9;
+  background-color: #E0F2E9;
   color: var(--text-color-light);
   justify-content: center;
   align-items: center;
@@ -29,18 +37,16 @@
     background-color: #4caf50;
   }
 }
-
-.dark-mode {
-    font-family: Arial, sans-serif;
-    background-color: #1d1e1e;
-    color: var(--text-color-dark);
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-
+body.dark {
+  font-family: Arial, sans-serif;
+  background-color: #2E7D32;
+  color: var(--text-color-dark);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
   .container {
-    background: #494949;
+    background:#2E7D32;
   }
   .next-btn {
     background-color: #04335b;
@@ -50,35 +56,60 @@
   }
   h1 {
     color: #6486a2;
-    }
-    h4 {
-        color: rgb(18, 18, 18);
-    }
-    #toggle-theme {
-        background-color: rgb(90, 88, 88, 0.5);
-        color: #6486a2;
-    }
-    .btn {
-        background-color: #6486a2;
-    }
+  }
+  h4 {
+    color: rgb(18, 18, 18);
+  }
+  #toggle-theme {
+    background-color: rgb(90, 88, 88, 0.5);
+    color: #6486a2;
+  }
+  .btn {
+    background-color: #6486a2;
+  }
 }
 
-#toggle-theme {
-    float: center;
-    font-size: 1em;
-    padding: 1em 1.5em;
-    border-radius: 24px;
-    margin-block: 8px;
-    margin-left: 8px;
-    border: none;
-}
 
-/*-----------------Posição do botão de mudar o tema ------------------*/
-#modo_btn {
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
   position: relative;
-  right: 350px;
-  top: -310px;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
 }
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+.fa-moon {
+  color: #f1c40f;
+}
+.fa-sun {
+  color: #f39c12;
+}
+
+
 /*----------------- ////// ------------------*/
 
 .container {

@@ -9,10 +9,14 @@
     <link rel="stylesheet" type="text/css" href="CSS3 Components/header_home.css">
     <link rel="stylesheet" type="text/css" href="CSS3 Components/section_banner-index.css">
     <link rel="stylesheet" type="text/css" href="CSS3 Components/style_modo.css">
+    <link rel="stylesheet" type="text/css" href="CSS3 Components/section_sobre_nos.css">
+    <link rel="stylesheet" type="text/css" href="CSS3 Components/section_blog_container.css">
+    <link rel="stylesheet" type="text/css" href="CSS3 Components/section_game-Game.css">
+
     <title> O Mundo das Flores || FloriBlog </title>
 </head>
 <body class="light-mode">
-    <header id="header">
+    <header id="header"> <!--Inicio do header -->
         <div class="header__name-logo">
             <span id="flori">Flori</span><span id="blog">Blog</span>
         </div>
@@ -20,7 +24,7 @@
             <nav>
                 <ul id="header__menu">
                     <li>
-                        <a class="header__nav-link" href="#">Home</a>
+                    <a class="header__nav-link" href="#">Home</a>
                     </li>
                     <li>
                         <a class="header__nav-link" href="#">Quem Somos</a>
@@ -39,9 +43,11 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" /></svg>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="header_icon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" /></svg>
+            <script src="script.js"></script>
         </div>
-    </header>
-    <section id="sec_index-primeira">
+    </header> <!--Fim do header-->
+
+    <section id="sec_index-primeira">  <!--Inicio da Section principal do banner-->
         <div id="container_sec-primeira">
             <div class="container_sec-info">
                 <span class="promotion">
@@ -50,66 +56,206 @@
                 <span class="atencao">
                     Não perca essa chance.
                 </span>
-                <h2>Aprenda o passo-a-passo para abrir sua Floricultura!!</h2>
-                <p>Você é apaixonado(a) por flores? Já sonhou em abrir e tocar sozinha sua própria rede de Floriculturas? está buscando entender mais sobre esse processo mas ainda não sabe por onde começar? Aqui na FLORIBLOG, vamos te dar uma explicação rápida e assertiva sobre quais processos, itens, espaço, valores você precisa saber para abrir sua própria floricultura... Clique em Saiba mais e aproveite.</p>
-                <button class="btn_sec-pr">Saiba mais...</button>
+                <h2 class="title_sec">Aprenda o passo-a-passo para abrir sua Floricultura!!</h2>
+                <p class="desc_sec">
+                    Você é apaixonado(a) por flores? Já sonhou em abrir e tocar sozinha sua própria rede de Floriculturas?
+                    Gostaria de entender como você poderá abrir sua própria floricultura do ZERO?
+                    <span class="saiba_mais"> Clique em Saiba mais e aproveite.</span>
+                </p>
+                <button class="btn_sec">Saiba mais...</button>
             </div>
             <div class="container_sec-image">
                 <img src="Recursos Imagens/boneca2.png">
             </div>
         </div>
-    </section>
-    <section id="sec_univag-segunda">
-        <div id="container_sec-primeira">
-            <div class="container_sec-info">
-                <span class="promotion">
-                    Por tempo limitado!!!
-                </span>
-                <span class="atencao">
-                    Não perca essa chance.
-                </span>
+    </section>  <!--final da section principal do banner -->
+
+    <section id="sec_univag-segunda">  <!--Inicio da Section do Sobre nós-->
+        <div id="container_sobrenos">
+            <div class="container_sobre-info">
                 <h2>quem somos!!</h2>
-                <p>Você é apaixonado(a) por flores? Já sonhou em abrir e tocar sozinha sua própria rede de Floriculturas? está buscando entender mais sobre esse processo mas ainda não sabe por onde começar? Aqui na FLORIBLOG, vamos te dar uma explicação rápida e assertiva sobre quais processos, itens, espaço, valores você precisa saber para abrir sua própria floricultura... Clique em Saiba mais e aproveite.</p>
-                <button class="btn_sec-pr">Saiba mais...</button>
-            </div>
-            <div class="container_sec-image">
-                <img src="Recursos Imagens/univagbanner.png">
-            </div>
-        </div>
-    </section>
-    <section id="sec_blog-terceira">
-        <div id="container_sec-primeira">
-            <div class="container_sec-info">
-                <span class="promotion">
-                    Por tempo limitado!!!
-                </span>
-                <span class="atencao">
-                    Não perca essa chance.
-                </span>
-                <h2>blog com as informações!!</h2>
-                <p>Você é apaixonado(a) por flores? Já sonhou em abrir e tocar sozinha sua própria rede de Floriculturas? está buscando entender mais sobre esse processo mas ainda não sabe por onde começar? Aqui na FLORIBLOG, vamos te dar uma explicação rápida e assertiva sobre quais processos, itens, espaço, valores você precisa saber para abrir sua própria floricultura... Clique em Saiba mais e aproveite.</p>
-                <button class="btn_sec-pr">Saiba mais...</button>
+                <p>
+                    Nós somos um grupo de alunos do curso de Tecnologia em Análise e Desenvolvimento de Sistemas da Univag. Como parte do nosso
+                    projeto acadêmico, desenvolvemos um blog voltado ao mundo da floricultura e das flores. O site tem um design simples, já que
+                    estamos dando nossos primeiros passos no desenvolvimento web, mas contém conteúdos enriquecedores.<br><br>
+                    <span>Nosso blog traz diversos cards com curiosidades e informações, que podem ser tanto relevantes quanto mais aleatórias, para
+                    entreter e informar os visitantes. Além disso, criamos um quiz interativo onde as pessoas podem testar seu conhecimento sobre
+                    flores e descobrir ainda mais curiosidades sobre esse universo fascinante.<br><br></span><span>Mesmo sendo um projeto básico,
+                    estamos animados com o que conseguimos realizar e esperamos que os visitantes aproveitem tanto o conteúdo quanto a experiência 
+                    interativa!</span>
+                </p>
             </div>
         </div>
-        imagem
-    </section>
+    </section>  <!--Fim da Section do Sobre nós-->
+
+    <section id="sec_blog-terceira"> <!--Inicio da Section de Blog-->
+        <div id="container_title-blog">
+            <div class="title_sec">
+                Curiosidades
+            </div>
+            <div id="container_blog-cards">
+                <div class="card">  <!--Inicio Card Editavel-->
+                    <h3 class="card_title">Titulo grande muito grande mesmo e longo mais longo ainda muito longo e grande</h3>
+                    <img src="Recursos Imagens/univagbanner.png" class="card_image">
+                    <div class="card_desc">
+                        <p>Loremue amas e aque em cima eos enim dolorum error commodi neque eum ea! sum dolor sit amet consectetur adipisicing elit. Corporis quia</p>
+                    </div>
+                    <button class="btn_card"><a href="#">Leia mais...</a></button>
+                </div>  <!--Fim card Editavel-->
+                <div class="card"><!--Inicio Card Editavel-->
+                    <h3 class="card_title">Titulo grande muito grande mesmo e longo mais longo ainda muito longo e grande</h3>
+                    <img src="Recursos Imagens/univagbanner.png" class="card_image">
+                    <div class="card_desc">
+                        <p>Loremue amas e aque em cima eos enim dolorum error commodi neque eum ea! sum dolor sit amet consectetur adipisicing elit. Corporis quia</p>
+                    </div>
+                    <button class="btn_card"><a href="#">Leia mais...</a></button>
+                </div><!--Fim card Editavel-->
+                <div class="card"><!--Inicio Card Editavel-->
+                    <h3 class="card_title">Titulo grande muito grande mesmo e longo mais longo ainda muito longo e grande</h3>
+                    <img src="Recursos Imagens/univagbanner.png" class="card_image">
+                    <div class="card_desc">
+                        <p>Loremue amas e aque em cima eos enim dolorum error commodi neque eum ea! sum dolor sit amet consectetur adipisicing elit. Corporis quia</p>
+                    </div>
+                    <button class="btn_card"><a href="#">Leia mais...</a></button>
+                </div><!--Fim card Editavel-->
+                <div class="card"><!--Inicio Card Editavel-->
+                    <h3 class="card_title">Titulo grande muito grande mesmo e longo mais longo ainda muito longo e grande</h3>
+                    <img src="Recursos Imagens/univagbanner.png" class="card_image">
+                    <div class="card_desc">
+                        <p>Loremue amas e aque em cima eos enim dolorum error commodi neque eum ea! sum dolor sit amet consectetur adipisicing elit. Corporis quia</p>
+                    </div>
+                    <button class="btn_card"><a href="#">Leia mais...</a></button>
+                </div><!--Fim card Editavel-->
+                <div class="card"><!--Inicio Card Editavel-->
+                    <h3 class="card_title">Titulo grande muito grande mesmo e longo mais longo ainda muito longo e grande</h3>
+                    <img src="Recursos Imagens/univagbanner.png" class="card_image">
+                    <div class="card_desc">
+                        <p>Loremue amas e aque em cima eos enim dolorum error commodi neque eum ea! sum dolor sit amet consectetur adipisicing elit. Corporis quia</p>
+                    </div>
+                    <button class="btn_card"><a href="#">Leia mais...</a></button>
+                </div><!--Fim card Editavel-->
+                <div class="card"><!--Inicio Card Editavel-->
+                    <h3 class="card_title">Titulo grande muito grande mesmo e longo mais longo ainda muito longo e grande</h3>
+                    <img src="Recursos Imagens/univagbanner.png" class="card_image">
+                    <div class="card_desc">
+                        <p>Loremue amas e aque em cima eos enim dolorum error commodi neque eum ea! sum dolor sit amet consectetur adipisicing elit. Corporis quia</p>
+                    </div>
+                    <button class="btn_card"><a href="#">Leia mais...</a></button>
+                </div><!--Fim card Editavel-->
+                <div class="card"><!--Inicio Card Editavel-->
+                    <h3 class="card_title">Titulo grande muito grande mesmo e longo mais longo ainda muito longo e grande</h3>
+                    <img src="Recursos Imagens/univagbanner.png" class="card_image">
+                    <div class="card_desc">
+                        <p>Loremue amas e aque em cima eos enim dolorum error commodi neque eum ea! sum dolor sit amet consectetur adipisicing elit. Corporis quia</p>
+                    </div>
+                    <button class="btn_card"><a href="#">Leia mais...</a></button>
+                </div><!--Fim card Editavel-->
+                <div class="card"><!--Inicio Card Editavel-->
+                    <h3 class="card_title">Titulo grande muito grande mesmo e longo mais longo ainda muito longo e grande</h3>
+                    <img src="Recursos Imagens/univagbanner.png" class="card_image">
+                    <div class="card_desc">
+                        <p>Loremue amas e aque em cima eos enim dolorum error commodi neque eum ea! sum dolor sit amet consectetur adipisicing elit. Corporis quia</p>
+                    </div>
+                    <button class="btn_card"><a href="#">Leia mais...</a></button>
+                </div><!--Fim card Editavel-->
+                <div class="card"><!--Inicio Card Editavel-->
+                    <h3 class="card_title">Titulo grande muito grande mesmo e longo mais longo ainda muito longo e grande</h3>
+                    <img src="Recursos Imagens/univagbanner.png" class="card_image">
+                    <div class="card_desc">
+                        <p>Loremue amas e aque em cima eos enim dolorum error commodi neque eum ea! sum dolor sit amet consectetur adipisicing elit. Corporis quia</p>
+                    </div>
+                    <button class="btn_card"><a href="#">Leia mais...</a></button>
+                </div><!--Fim card Editavel-->
+                <div class="card">  <!--Inicio Card Editavel-->
+                    <h3 class="card_title">Titulo grande muito grande mesmo e longo mais longo ainda muito longo e grande</h3>
+                    <img src="Recursos Imagens/univagbanner.png" class="card_image">
+                    <div class="card_desc">
+                        <p>Loremue amas e aque em cima eos enim dolorum error commodi neque eum ea! sum dolor sit amet consectetur adipisicing elit. Corporis quia</p>
+                    </div>
+                    <button class="btn_card"><a href="#">Leia mais...</a></button>
+                </div>  <!--Fim card Editavel-->
+                <div class="card"><!--Inicio Card Editavel-->
+                    <h3 class="card_title">Titulo grande muito grande mesmo e longo mais longo ainda muito longo e grande</h3>
+                    <img src="Recursos Imagens/univagbanner.png" class="card_image">
+                    <div class="card_desc">
+                        <p>Loremue amas e aque em cima eos enim dolorum error commodi neque eum ea! sum dolor sit amet consectetur adipisicing elit. Corporis quia</p>
+                    </div>
+                    <button class="btn_card"><a href="#">Leia mais...</a></button>
+                </div><!--Fim card Editavel-->
+                <div class="card"><!--Inicio Card Editavel-->
+                    <h3 class="card_title">Titulo grande muito grande mesmo e longo mais longo ainda muito longo e grande</h3>
+                    <img src="Recursos Imagens/univagbanner.png" class="card_image">
+                    <div class="card_desc">
+                        <p>Loremue amas e aque em cima eos enim dolorum error commodi neque eum ea! sum dolor sit amet consectetur adipisicing elit. Corporis quia</p>
+                    </div>
+                    <button class="btn_card"><a href="#">Leia mais...</a></button>
+                </div><!--Fim card Editavel-->
+                <div class="card"><!--Inicio Card Editavel-->
+                    <h3 class="card_title">Titulo grande muito grande mesmo e longo mais longo ainda muito longo e grande</h3>
+                    <img src="Recursos Imagens/univagbanner.png" class="card_image">
+                    <div class="card_desc">
+                        <p>Loremue amas e aque em cima eos enim dolorum error commodi neque eum ea! sum dolor sit amet consectetur adipisicing elit. Corporis quia</p>
+                    </div>
+                    <button class="btn_card"><a href="#">Leia mais...</a></button>
+                </div><!--Fim card Editavel-->
+                <div class="card"><!--Inicio Card Editavel-->
+                    <h3 class="card_title">Titulo grande muito grande mesmo e longo mais longo ainda muito longo e grande</h3>
+                    <img src="Recursos Imagens/univagbanner.png" class="card_image">
+                    <div class="card_desc">
+                        <p>Loremue amas e aque em cima eos enim dolorum error commodi neque eum ea! sum dolor sit amet consectetur adipisicing elit. Corporis quia</p>
+                    </div>
+                    <button class="btn_card" ><a href="#">Leia mais...</a></button>
+                </div><!--Fim card Editavel-->
+                <div class="card"><!--Inicio Card Editavel-->
+                    <h3 class="card_title">Titulo grande muito grande mesmo e longo mais longo ainda muito longo e grande</h3>
+                    <img src="Recursos Imagens/univagbanner.png" class="card_image">
+                    <div class="card_desc">
+                        <p>Loremue amas e aque em cima eos enim dolorum error commodi neque eum ea! sum dolor sit amet consectetur adipisicing elit. Corporis quia</p>
+                    </div>
+                    <button class="btn_card"><a href="#">Leia mais...</a></button>
+                </div><!--Fim card Editavel-->
+                <div class="card"><!--Inicio Card Editavel-->
+                    <h3 class="card_title">Titulo grande muito grande mesmo e longo mais longo ainda muito longo e grande</h3>
+                    <img src="Recursos Imagens/univagbanner.png" class="card_image">
+                    <div class="card_desc">
+                        <p>Loremue amas e aque em cima eos enim dolorum error commodi neque eum ea! sum dolor sit amet consectetur adipisicing elit. Corporis quia</p>
+                    </div>
+                    <button class="btn_card"><a href="#">Leia mais...</a></button>
+                </div><!--Fim card Editavel-->
+                <div class="card"><!--Inicio Card Editavel-->
+                    <h3 class="card_title">Titulo grande muito grande mesmo e longo mais longo ainda muito longo e grande</h3>
+                    <img src="Recursos Imagens/univagbanner.png" class="card_image">
+                    <div class="card_desc">
+                        <p>Loremue amas e aque em cima eos enim dolorum error commodi neque eum ea! sum dolor sit amet consectetur adipisicing elit. Corporis quia</p>
+                    </div>
+                    <button class="btn_card"><a href="#">  <a href="#">Leia mais...</a>  </a></a></button>
+                </div><!--Fim card Editavel-->
+                <div class="card"><!--Inicio Card Editavel-->
+                    <h3 class="card_title">Titulo grande muito grande mesmo e longo mais longo ainda muito longo e grande</h3>
+                    <img src="Recursos Imagens/univagbanner.png" class="card_image">
+                    <div class="card_desc">
+                        <p>Loremue amas e aque em cima eos enim dolorum error commodi neque eum ea! sum dolor sit amet consectetur adipisicing elit. Corporis quia</p>
+                    </div>
+                    <button class="btn_card"><a href="#">Leia mais...</a></button>
+                </div><!--Fim card Editavel-->
+            </div>
+            <button class="btn_showMore" id="showMoreBtn" style="display: none;">Mostrar Mais</button>
+        </div>
+    </section>  <!--Fim da Section de Blog-->
+
     <section id="sec_game">
-        <div id="container_sec-primeira">
-            <div class="container_sec-info">
-                <span class="promotion">
-                    Por tempo limitado!!!
-                </span>
-                <span class="atencao">
-                    Não perca essa chance.
-                </span>
-                <h2>informações e link do quiz!!</h2>
-                <p>Você é apaixonado(a) por flores? Já sonhou em abrir e tocar sozinha sua própria rede de Floriculturas? está buscando entender mais sobre esse processo mas ainda não sabe por onde começar? Aqui na FLORIBLOG, vamos te dar uma explicação rápida e assertiva sobre quais processos, itens, espaço, valores você precisa saber para abrir sua própria floricultura... Clique em Saiba mais e aproveite.</p>
-                <button class="btn_sec-pr">Saiba mais...</button>
+        <div id="contain_box-game">
+            <div id="box-aside">
+                <button id="btn_game">Acessar Game</button>
             </div>
+            <div id="box_info-game">informações</div>
         </div>
-    </section>
-    <footer>
-        esse é o rodapé
-    </footer>
+    </section>  <!--Final da section do Game -->
+
+    <footer id="sec_rodape">  <!--Inicio da Section de rodapé-->
+        opa
+    </footer>  <!--final da sectionde rodapé-->
+    <script src="Js Pages/container_cards.js">
+    </script>
 </body>
 </html>

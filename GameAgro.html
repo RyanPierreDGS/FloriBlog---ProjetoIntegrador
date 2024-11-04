@@ -71,17 +71,17 @@
                     <button id="next-btn" class="next-btn" onclick="nextQuestion()">Próxima</button>
                 </div>
             </div>
+            <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+            <script>
+                const chk = document.getElementById('chk')
+        
+                chk.addEventListener('change', () => {
+                    document.body.classList.toggle('dark')
+                })
+            </script>
             <script src="script.js"></script>
         </section>
     </main>
-    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
-    <script>
-        const chk = document.getElementById('chk')
-
-        chk.addEventListener('change', () => {
-            document.body.classList.toggle('dark')
-        })
-    </script>
 </body>
 
 </html>

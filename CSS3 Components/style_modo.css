@@ -1,198 +1,198 @@
-.light-mode {
-    font-family: Arial, sans-serif;
-    background-color: #ece9e9;
-    color: var(--text-color-light);
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    .container {
-        background: #ffff;
-    }
-    .next-btn {
-        background-color: #04335b;
-    }
-    h1 {
-        color: #2e7d32;
-    }
-    h3 {
-        color: rgb(76, 75, 75);
-    }
-    h4 {
-        color: rgb(76, 75, 75);
-    }
-    #toggle-theme {
-        color: rgba(255, 147, 53, 0.9);
-    }
-    .btn {
-        background-color: #4caf50;
-    }
+/*----------------- botão de mudar o tema ------------------*/
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
-
-.dark-mode {
-    font-family: Arial, sans-serif;
-    background-color: #2C2E32;
-    color: var(--text-color-dark);
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-
-    .container {
-        background: #494949;
-    }
-    .next-btn {
-        background-color: #04335b;
-    }
-    #start-btn {
-        background-color: #6486a2;
-    }
-    h1 {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #E0F2E9;
+  color: var(--text-color-light);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  .container {
+    background: #ffff;
+  }
+  .next-btn {
+    background-color: #04335b;
+  }
+  h1 {
+    color: #2e7d32;
+  }
+  h3 {
+    color: rgb(76, 75, 75);
+  }
+  h4 {
+    color: rgb(76, 75, 75);
+  }
+  #toggle-theme {
+    background: rgb(215, 213, 213);
+    color: #2e7d32;
+  }
+  .btn {
+    background-color: #4caf50;
+  }
+}
+body.dark {
+  font-family: Arial, sans-serif;
+  background-color: #2E7D32;
+  color: var(--text-color-dark);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  .container {
+    background:#2E7D32;
+  }
+  .next-btn {
+    background-color: #04335b;
+  }
+  #start-btn {
+    background-color: #6486a2;
+  }
+  h1 {
     color: #6486a2;
-    }
-    h4 {
-        color: rgb(18, 18, 18);
-    }
-    #toggle-theme {
-        color: black;
-    }
-    .btn {
-        background-color: #6486a2;
-    }
-    /*----------modo dark da header */
-    #header{
-        height: 75px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        background: rgba(34, 78, 36, 0.71);
-        padding-inline: 10rem;
-        align-items: center;
-    }
-    /*-----------Modo dark da index informações banner */
-    .atencao{
-        color: white;
-        font-size: 0.9rem;
-    }
-    
-    .title_sec{
-        color: white;
-        margin-bottom: 2rem;
-        font-size: 2.2rem;
-        word-spacing: -7px;
-        font-weight: 600;
-    }
-    
-    .desc_sec{
-        color: white;
-        font-size: 1.3rem;
-        margin-block: 1.25rem;
-    
-    }
-    
-    .saiba_mais{
-        font-size: 0.9rem;
-        color: #1976d2;
-    }
+  }
+  h4 {
+    color: rgb(18, 18, 18);
+  }
+  #toggle-theme {
+    background-color: rgb(90, 88, 88, 0.5);
+    color: #6486a2;
+  }
+  .btn {
+    background-color: #6486a2;
+  }
 }
 
-/*#toggle-theme {
-    float: center;
-    font-size: 1em;
-    padding: 1em 1.5em;
-    border-radius: 24px;
-    margin-block: 8px;
-    margin-left: 8px;
-    border: none;
-}*/
 
-/*-----------------Posição do botão de mudar o tema ------------------*/
-#modo_btn {
-    position: relative;
-    right: 350px;
-    top: -310px;
+.checkbox {
+  opacity: 0;
+  position: absolute;
 }
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+}
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+.fa-moon {
+  color: #f1c40f;
+}
+.fa-sun {
+  color: #f39c12;
+}
+
+
 /*----------------- ////// ------------------*/
 
 .container {
-    width: 560px;
-    text-align: center;
-    padding: 25px;
-    border-radius: 35px;
-    box-shadow: 75px 25px 75px rgba(0, 0, 0, 0.5);
-    display: block;
+  width: 560px;
+  text-align: center;
+  padding: 25px;
+  border-radius: 35px;
+  box-shadow: 75px 25px 75px rgba(0, 0, 0, 0.5);
+  display: block;
 }
 
 #start-container {
-    max-width: 600px;
+  width: 100%;
+  height: 500px;
+  padding: 16px;
+  margin: 10px;
 }
 
 #quiz-container {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 h1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
 h4 {
-    text-align: center;
+  text-align: center;
 }
 
 #score {
-    font-size: 1.2em;
-    color: #4caf50;
-    margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #4caf50;
+  margin-bottom: 20px;
 }
 
 #question {
-    margin-bottom: 20px;
-    font-size: 1.5em;
+  margin-bottom: 20px;
+  font-size: 1.5em;
 }
 
 .btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
 }
 
-.btn     {
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
+.btn {
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
 }
 
 .btn:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 .next-btn {
-    margin-top: 20px;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    display: none;
+  margin-top: 20px;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  display: none;
 }
 
 .next-btn:hover {
-    background-color: #1976d2;
+  background-color: #1976d2;
 }
 
 #name-input {
-    padding: 10px;
-    font-size: 1em;
-    margin-bottom: 20px;
-    width: 80%;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+  padding: 16px;
+  font-size: 1em;
+  margin: 20px;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
 }
-

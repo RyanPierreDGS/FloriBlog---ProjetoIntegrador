@@ -110,3 +110,4 @@ function nextQuestion() {
         document.getElementById('name-input').value = "";
     }
 }
+

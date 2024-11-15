@@ -6,12 +6,14 @@
     <link rel="stylesheet" type="text/css" href="CSS3 Recursos/CSS3 Componentes/normalize.css">
     <link rel="stylesheet" type="text/css" href="CSS3 Recursos/CSS3 Componentes/style_layout.css">
     <link rel="stylesheet" type="text/css" href="CSS3 Components/style_gameagro.css">
+    <link rel="stylesheet" type="text/css" href="CSS3 Components/style_modo.css">
     <link rel="stylesheet" type="text/css" href="CSS3 Components/header_home.css">
     <link rel="stylesheet" type="text/css" href="CSS3 Components/section_banner-index.css">
-    <link rel="stylesheet" type="text/css" href="CSS3 Components/style_modo.css">
-    <link rel="stylesheet" type="text/css" href="CSS3 Components/section_sobre_nos.css">
+    <link rel="stylesheet" type="text/css" href="CSS3 Components/section_sec-info.css">
+    <link rel="stylesheet" type="text/css" href="CSS3 Components/section_.css">
     <link rel="stylesheet" type="text/css" href="CSS3 Components/section_blog_container.css">
     <link rel="stylesheet" type="text/css" href="CSS3 Components/section_game-Game.css">
+    <link rel="stylesheet" type="text/css" href="CSS3 Components/section_sobre_nos.css">
 
     <title > O Mundo das Flores || FloriBlog </title>
 </head>
@@ -41,11 +43,11 @@
         <div>
             <input type="checkbox" class="checkbox" id="chk" />
             <label class="label" for="chk">
-              <i class="fas fa-moon"></i>
-              <i class="fas fa-sun"></i>
-              <div class="ball"></div>
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
             </label>
-          </div>
+        </div>
     </header> <!--Fim do header-->
 
     <section id="sec_index-primeira">  <!--Inicio da Section principal do banner-->
@@ -71,6 +73,21 @@
         </div>
     </section>  <!--final da section principal do banner -->
 
+    <section id="sec_info">
+        <div class="info_title">
+            Conheça sobre nós
+        </div>
+        <div id="container_info--pr">
+            <div id="box_ponto">
+                <!-- O conteúdo dinâmico aparecerá aqui -->
+            </div>
+            <div id="box_pontos">
+                <div class="box_info-pontos" data-info="Proposta da empresa...">Proposta</div>
+                <div class="box_info-pontos" data-info="Nossos objetivos incluem...">Objetivos</div>
+                <div class="box_info-pontos" data-info="Nossos valores são...">Valores</div>
+            </div>
+        </div>
+    </section>
 
     <section id="sec_blog-terceira"> <!--Inicio da Section de Blog-->
         <div id="container_title-blog">
@@ -228,17 +245,23 @@
     </section>  <!--Fim da Section de Blog-->
 
     <section id="sec_game">
-        <div id="contain_box-game">
-            <div id="box-aside">
-                <button id="btn_game">Acessar Game</button>
+        <div id="container_game">
+            <img class="game_img" src="Recursos Imagens/gamezone.jpg">
+            <div id="aside_game">
+                <div id="desc_game">
+                    FloriGame
+                </div>
+                <button id="btn_cont">
+                    botao
+                </button>
             </div>
-            <div id="box_info-game">informações</div>
         </div>
     </section>  <!--Final da section do Game -->
 
     <footer style="font-size: 30px; position: relative; bottom: 0; width: 100%; background-color: rgba(41, 111, 45, 0.71); color: white; text-align: center; padding: 10px;">  <!--Inicio da Section de rodapé-->
         <p>FloriBlog &copy; 2024 Direitos Reservados
     </footer>  <!--final da sectionde rodapé-->
+    <script src="Js Pages/container_info-second.js"></script>
     <script src="Js Pages/container_cards.js">
     </script>
     <script src="script.js"></script>

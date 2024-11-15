@@ -1,4 +1,4 @@
-#sec_game{
+/* #sec_game{
     margin-block: 2rem;
 }
 
@@ -60,4 +60,47 @@
     background: rgba(64, 53, 71, 0.1);
     border: 1px solid rgba(98, 99, 71, 0.2);
 
+} */
+
+#sec_game{
+    border: 1px solid black;
+    margin-block: 3rem;
+}
+
+#container_game{
+    border: 1px solid red;
+    width: 960px;
+    height: 400px;
+    margin-inline: auto;
+    background: white;
+    display: flex;
+    padding-inline: 30px;
+}
+
+.game_img{
+    width: 450px;
+    border: 3px solid green;
+}
+
+#aside_game{
+    border: 2px solid red;
+    width: 450px;
+    height: 120px;
+}
+
+#desc_game{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#btn_cont{
+    border: 1px solid gray;
+    width: 120px;
+    height: 40px;
+    border-radius: 18px;
+    transition: width 0.3s ease-in-out;
+}
+
+#btn_cont:hover{
+    width: 160px;
 }

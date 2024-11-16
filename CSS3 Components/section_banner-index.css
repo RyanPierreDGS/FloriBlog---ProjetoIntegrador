@@ -1,6 +1,17 @@
-#sec_index-primeira{
+#sec_index-primeira {
     height: 645px;
-    width: auto;
+    width: 100%;
+    background: #FFF0DD url('../Recursos Imagens/sunflower.jpg'); /* Definindo a imagem como background */
+    background-size: cover; /* A imagem cobre toda a área da section */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+.sec_index-primeira {
+    height: 100vh;
+    background-image: url('../Recursos Imagens/sunflower.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 #container_sec-primeira{

@@ -63,7 +63,8 @@
 } */
 
 #sec_game{
-    margin-block: 3rem;
+    height: 450px;
+    margin-block: 1.5rem;
 }
 
 #container_game{
@@ -92,7 +93,7 @@
     padding-block: 16px;
     margin-block: 120px;
     text-align: center;
-    background: #619364;
+    background: #6D8344;
     border: 1px solid rgba(98, 99, 71, 0.2);
     box-shadow: 6px 2px 15px gray;
 }

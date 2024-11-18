@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7",
+    "yarn": "^1.22.22"
+  },
+  "name": "projeto-integrador-floriblog",
+  "version": "1.0.0",
+  "description": "<!-- <<<<<<< HEAD -->",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon index"
+  },
+  "author": "",
+  "license": "ISC"
+}

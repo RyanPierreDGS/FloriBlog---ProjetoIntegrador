@@ -1,25 +1,30 @@
-#sec_index-primeira{
-    height: 645px;
-    width: auto;
+#sec_index-primeira {
+    height: 720px;
+    width: 100%;
+    background: #FFF0DD url('../Recursos Imagens/sunflower.jpg'); /*Definindo a imagem como background*/
+    background-size: cover; /* A imagem cobre toda a área da section */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    border: 1px solid rgba(98, 99, 71, 0.2);
+}
+
+#sec_index-primeira {
+    height: 100vh;
+    /* background-image: url('../Recursos Imagens/sunflower.jpg'); */
+    background-size: cover;
+    background-position: center;
 }
 
 #container_sec-primeira{
-    display: flex;
-    width: 75%;
-    margin-inline: auto;
+    width: 40%;
     padding-inline: 2rem;
     padding-block: 2rem;
-    justify-content: space-between;
-    margin-block: 10px;
-}
-
-.container_sec-image{
-    max-width: 600px;
-    max-height: 450px;
+    margin-left: 10rem;
+    margin-block: 140px;
 }
 
 .container_sec-info{
-    padding-block: 7rem;
+    padding-block: 1rem;
     padding-inline: 16px;
 }
 
@@ -31,6 +36,7 @@
 }
 
 .atencao{
+    color: #718143;
     font-size: 0.9rem;
 }
 
@@ -49,7 +55,7 @@
 
 .saiba_mais{
     font-size: 0.9rem;
-
+    color: #718143;
 }
 
 .btn_sec{

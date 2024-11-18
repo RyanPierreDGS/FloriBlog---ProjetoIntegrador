@@ -1,4 +1,4 @@
-#sec_game{
+/* #sec_game{
     margin-block: 2rem;
 }
 
@@ -60,4 +60,72 @@
     background: rgba(64, 53, 71, 0.1);
     border: 1px solid rgba(98, 99, 71, 0.2);
 
+} */
+
+#sec_game{
+    margin-block: 3rem;
 }
+
+#container_game{
+    border: 1px solid rgba(98, 99, 71, 0.2);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 46px;
+    width: 960px;
+    height: 400px;
+    margin-inline: auto;
+    background: white;
+    display: flex;
+    padding-inline: 30px;
+}
+
+.game_img{
+    margin-block: 25px;
+    margin-inline: 12px;
+    width: 400px;
+    height: 350px;
+}
+
+#aside_game{
+    border-radius: 1000px;
+    width: 450px;
+    height: 160px;
+    padding-block: 16px;
+    margin-block: 120px;
+    text-align: center;
+    background: #619364;
+    border: 1px solid rgba(98, 99, 71, 0.2);
+    box-shadow: 6px 2px 15px gray;
+}
+
+#desc_game{
+    text-align: center;
+    padding-block: 1rem;
+    height: 60px;
+    font-size: 1.7rem;
+    color: white;
+    text-shadow: 5px 5px 10px gray;
+}
+
+#btn_cont{
+    margin-inline: auto;
+    line-height: 25px;
+    box-sizing: border-box;
+    padding-block: 7.5px;
+}
+
+#btn_cont a{
+    background: #FD9C47;
+    border: 1px solid rgba(98, 99, 71, 0.2);
+    display: inline-block;
+    text-decoration: none;
+    width: 140px;
+    height: 40px;
+    border-radius: 18px;
+    transition: width 0.3s ease-in-out;
+    color: white;
+}
+
+#btn_cont:hover{
+    width: 200px;
+}
+

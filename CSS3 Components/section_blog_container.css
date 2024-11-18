@@ -1,143 +1,143 @@
-#sec_blog-terceira{
-    margin-block: 2rem;
+#sec_blog-terceira {
+  margin-block: 0.5rem;
 }
 
-#container_blog-cards{
-    border: 1px solid rgba(98, 99, 71, 0.2);
-    border-radius: 26px;
-    max-width: 1120px;
-    width: 80%;
-    margin-inline: auto;
-    /* margin-block: 2rem; */
-    text-align: center;
-    position: relative;
-    top: 175px;
-    background: #F7F7F7;
-    /* ## Display grid vai funcionar para deixar em forma de colunas. Grid template define quantas colunas vão se repetir na largura de */
-    /*Largura minima de cada card de 250px, caso chegue nesse valor ele diminuirá 1 coluna.*/
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(2, auto);
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    box-shadow: 6px 2px 15px gray;
+#container_blog-cards {
+  border: 1px solid rgba(98, 99, 71, 0.2);
+  border-radius: 26px;
+  max-width: 1120px;
+  width: 80%;
+  margin-inline: auto;
+  /* margin-block: 2rem; */
+  text-align: center;
+  position: relative;
+  top: 175px;
+  background: #f7f7f7;
+  /* ## Display grid vai funcionar para deixar em forma de colunas. Grid template define quantas colunas vão se repetir na largura de */
+  /*Largura minima de cada card de 250px, caso chegue nesse valor ele diminuirá 1 coluna.*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(2, auto);
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  box-shadow: 6px 2px 15px gray;
 }
 
-#container_blog-cards.expanded{
-    overflow: visible;
+#container_blog-cards.expanded {
+  overflow: visible;
 }
 
-#container_title-blog{
-    margin-top: 6rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 1000px;
+#container_title-blog {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 1000px;
 }
 
-#container_title-blog .title_sec{
-    margin-inline: auto;
-    margin-bottom: -150px;
-    align-items: center;
-    height: 50px;
-    font-size: 3rem;
-    color: #FD9C47;
-    text-shadow: 5px 5px 10px gray;
+#container_title-blog .title_sec {
+  margin-inline: auto;
+  margin-bottom: -150px;
+  align-items: center;
+  height: 50px;
+  font-size: 3rem;
+  color: #fd9c47;
+  text-shadow: 5px 5px 10px gray;
 }
 
-#container_blog-cards h2{
-    margin-top: -30px;
-    font-size: 2.7rem;
+#container_blog-cards h2 {
+  margin-top: -30px;
+  font-size: 2.7rem;
 }
-.card{
-    border: 1px solid rgba(98, 99, 71, 0.2);
-    background: white;
-    width: 250px;
-    height: 330px;
-    padding-block: 16px;
-    padding-inline: 15px;
-    margin-inline: auto;
-    margin-block: 26px;
-    border-radius: 24px;
-}
-
-.card_title{
-    font-size: 1.1rem;
-    line-height: 22px;
-    text-align: left;
-    margin-left: 6px;
-    margin-bottom: 4px;
-    white-space: nowrap;           /* Mantém o texto em uma única linha */
-    overflow: hidden;              /* Oculta o excesso de texto */
-    text-overflow: ellipsis;       /* Adiciona reticências (...) */
-    width: 100%;
+.card {
+  border: 1px solid rgba(98, 99, 71, 0.2);
+  background: white;
+  width: 250px;
+  height: 330px;
+  padding-block: 16px;
+  padding-inline: 15px;
+  margin-inline: auto;
+  margin-block: 26px;
+  border-radius: 24px;
 }
 
-.card_image{
-    width: 95%;
-    max-height: 110px;
-    border-radius: 12px;
-}
-.card_desc p{
-    width: 100%;
-    text-align: left;
-    padding: 0px;
-    font-size: 0.9rem;
-    margin-left: -1px;
-    margin-top: 8px;
-    white-space: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    /* -webkit-line-clamp: 7;      Limita o número de linhas */
-    -webkit-box-orient: vertical;
+.card_title {
+  font-size: 1.1rem;
+  line-height: 22px;
+  text-align: left;
+  margin-left: 6px;
+  margin-bottom: 4px;
+  white-space: nowrap; /* Mantém o texto em uma única linha */
+  overflow: hidden; /* Oculta o excesso de texto */
+  text-overflow: ellipsis; /* Adiciona reticências (...) */
+  width: 100%;
 }
 
-.btn_card{
-    margin-inline: auto;
-    width: 75%;
-    height: 30px;
-    padding-block: 4px;
-    position: relative;
-    top: 20px;
-    border-radius: 12px;
-    cursor: pointer;
-    background: #FD9C47;
-    transition: width 0.3s ease;
+.card_image {
+  width: 95%;
+  max-height: 110px;
+  border-radius: 12px;
+}
+.card_desc p {
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+  font-size: 0.9rem;
+  margin-left: -1px;
+  margin-top: 8px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 7;      Limita o número de linhas */
+  -webkit-box-orient: vertical;
 }
 
-.btn_card:hover{
-    margin-inline: auto;
-    width: 85%;
-    padding-block: 4px;
-    position: relative;
-    top: 20px;
-    border-radius: 12px;
-    cursor: pointer;
-    color: white;
+.btn_card {
+  margin-inline: auto;
+  width: 75%;
+  height: 30px;
+  padding-block: 4px;
+  position: relative;
+  top: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #fd9c47;
+  transition: width 0.3s ease;
+}
+
+.btn_card:hover {
+  margin-inline: auto;
+  width: 85%;
+  padding-block: 4px;
+  position: relative;
+  top: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
 }
 
 .btn_card a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: white;
 }
 
-.btn_showMore{
-    position: relative;
-    top: 200px;
-    width: 240px;
-    height: 40px;
-    border-radius: 48px;
-    border: 1px solid rgba(98, 99, 71, 0.2);
-    color: #F0F4F0;
-    background: #619364;
-    font-weight: 500;
-    margin-inline: auto;
-    transition: width 0.9s ease;
+.btn_showMore {
+  position: relative;
+  top: 200px;
+  width: 240px;
+  height: 40px;
+  border-radius: 48px;
+  border: 1px solid rgba(98, 99, 71, 0.2);
+  color: #f0f4f0;
+  background: #6d8344;
+  font-weight: 500;
+  margin-inline: auto;
+  transition: width 0.9s ease;
 }
 
-.btn_showMore:hover{
-    width: 320px;
+.btn_showMore:hover {
+  width: 320px;
 }
 
 /* Media Queries */
@@ -146,91 +146,91 @@
 
 /* 320px — 480px: dispositivos móveis */
 @media (max-width: 480px) {
-    #container_blog-cards {
-        width: 100%; /* Ajuste para expandir mais */
-        padding: 1rem;
-    }
-    .card {
-        width: 90%;
-        height: auto; /* Permite altura mais flexível */
-    }
-    .card_title {
-        font-size: 1.6rem; /* Aumentando para maior legibilidade */
-    }
-    .card_desc p {
-        font-size: 1.2rem; /* Aumentando para melhor leitura */
-    }
-    .btn_card {
-        width: 85%; /* Mais largura para centralizar melhor */
-        height: 40px;
-        top: 0;
-        margin: 0 auto; /* Centralização */
-    }
-    .card_image {
-        max-height: 160px; /* Evitar esticar e melhor proporção */
-    }
-    .btn_showMore{
-        width: 320px;
-        height: 120px;
-    }
+  #container_blog-cards {
+    width: 100%; /* Ajuste para expandir mais */
+    padding: 1rem;
+  }
+  .card {
+    width: 90%;
+    height: auto; /* Permite altura mais flexível */
+  }
+  .card_title {
+    font-size: 1.6rem; /* Aumentando para maior legibilidade */
+  }
+  .card_desc p {
+    font-size: 1.2rem; /* Aumentando para melhor leitura */
+  }
+  .btn_card {
+    width: 85%; /* Mais largura para centralizar melhor */
+    height: 40px;
+    top: 0;
+    margin: 0 auto; /* Centralização */
+  }
+  .card_image {
+    max-height: 160px; /* Evitar esticar e melhor proporção */
+  }
+  .btn_showMore {
+    width: 320px;
+    height: 120px;
+  }
 }
 
 /* 481px — 768px: iPads, tablets */
 @media (min-width: 481px) and (max-width: 768px) {
-    #container_blog-cards {
-        width: 95%;
-        padding: 1.5rem; /* Mais padding para melhorar visualização */
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-    .card {
-        width: 90%; /* Aumentando a largura */
-        height: 350px; /* Pequeno aumento na altura */
-    }
-    .card_title {
-        font-size: 1.4rem; /* Legibilidade */
-    }
-    .card_desc p {
-        font-size: 1rem;
-    }
-    .btn_card {
-        width: 80%; /* Mais largura para centralizar */
-        height: 35px;
-        top: 0;
-        margin: 0 auto;
-    }
-    .card_image {
-        max-height: 150px;
-    }
-    .btn_showMore{
-        width: 220px;
-        height: 80px;
-    }
+  #container_blog-cards {
+    width: 95%;
+    padding: 1.5rem; /* Mais padding para melhorar visualização */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .card {
+    width: 90%; /* Aumentando a largura */
+    height: 350px; /* Pequeno aumento na altura */
+  }
+  .card_title {
+    font-size: 1.4rem; /* Legibilidade */
+  }
+  .card_desc p {
+    font-size: 1rem;
+  }
+  .btn_card {
+    width: 80%; /* Mais largura para centralizar */
+    height: 35px;
+    top: 0;
+    margin: 0 auto;
+  }
+  .card_image {
+    max-height: 150px;
+  }
+  .btn_showMore {
+    width: 220px;
+    height: 80px;
+  }
 }
 
 /* 769px — 1024px: telas pequenas, laptops */
 @media (min-width: 769px) and (max-width: 1024px) {
-    #container_blog-cards {
-        width: 90%; /* Um pouco maior */
-        padding: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
-    .card {
-        width: 85%;
-        height: auto; /* Flexibilidade na altura */
-    }
-    .card_title {
-        font-size: 1.3rem;
-    }
-    .card_desc p {
-        font-size: 1rem;
-    }
-    .btn_card {
-        width: 75%;
-        height: 30px;
-        top: 0;
-        margin: 0 auto;
-    }
-    .card_image {
-        max-height: 130px;
-    }
+  #container_blog-cards {
+    width: 90%; /* Um pouco maior */
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  .card {
+    width: 85%;
+    height: auto; /* Flexibilidade na altura */
+  }
+  .card_title {
+    font-size: 1.3rem;
+  }
+  .card_desc p {
+    font-size: 1rem;
+  }
+  .btn_card {
+    width: 75%;
+    height: 30px;
+    top: 0;
+    margin: 0 auto;
+  }
+  .card_image {
+    max-height: 130px;
+  }
 }

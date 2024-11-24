@@ -16,10 +16,10 @@
 }
 
 #container_sec-primeira {
-  width: 45%;
+  width: 40%;
   height: 65%;
   margin-left: 12rem;
-  margin-block: 140px;
+  margin-block: 120px;
   display: flex;
   align-items: center;
   background: linear-gradient(
@@ -29,10 +29,11 @@
   );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 1px;
+  border-radius: 26px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   border-radius: 10px;
+  padding-inline: 16px;
 }
 
 .container_sec-info {
@@ -122,12 +123,12 @@
 @media (min-width: 992px) {
   .promotion,
   .atencao {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
   .title_sec {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
   .desc_sec {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }

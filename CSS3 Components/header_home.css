@@ -1,5 +1,4 @@
 /*-----------------------------Estilizando Header  */
-
 #header {
   position: fixed;
   width: 100%;
@@ -16,6 +15,12 @@
   align-items: center;
 }
 
+#header.scroll {
+  background-color: rgba(255, 255, 255, 0.9); /* Cor sólida */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
 .header__name-logo {
   display: block;
   font-weight: bold;
@@ -26,7 +31,7 @@
   cursor: pointer;
 }
 
-#header.glass {
+/* #header.glass {
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1),
@@ -37,7 +42,7 @@
   border-radius: 1px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
+} */
 
 #flori {
   color: #718143;

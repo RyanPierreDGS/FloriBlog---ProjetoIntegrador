@@ -1,84 +1,133 @@
 #sec_index-primeira {
-    height: 720px;
-    width: 100%;
-    background: #FFF0DD url('../Recursos Imagens/sunflower.jpg'); /*Definindo a imagem como background*/
-    background-size: cover; /* A imagem cobre toda a área da section */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    border: 1px solid rgba(98, 99, 71, 0.2);
+  height: 720px;
+  width: 100%;
+  background: #fff0dd url("../Recursos Imagens/sunflower.jpg"); /*Definindo a imagem como background*/
+  background-size: cover; /* A imagem cobre toda a área da section */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  border: 1px solid rgba(98, 99, 71, 0.2);
 }
 
 #sec_index-primeira {
-    height: 100vh;
-    /* background-image: url('../Recursos Imagens/sunflower.jpg'); */
-    background-size: cover;
-    background-position: center;
+  height: 100vh;
+  /* background-image: url('../Recursos Imagens/sunflower.jpg'); */
+  background-size: cover;
+  background-position: center;
 }
 
-#container_sec-primeira{
-    width: 40%;
-    padding-inline: 2rem;
-    padding-block: 2rem;
-    margin-left: 10rem;
-    margin-block: 140px;
+#container_sec-primeira {
+  width: 45%;
+  height: 65%;
+  margin-left: 12rem;
+  margin-block: 140px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 10px;
 }
 
-.container_sec-info{
-    padding-block: 1rem;
-    padding-inline: 16px;
+.container_sec-info {
+  padding-block: 1rem;
+  padding-inline: 16px;
 }
 
-.promotion{
-    color: rgba(255, 147, 53, 0.9);
+.promotion {
+  color: rgba(255, 147, 53, 0.9);
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 2px;
+}
+
+.atencao {
+  color: #718143;
+  font-size: 1rem;
+}
+
+.title_sec {
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  word-spacing: -7px;
+  font-weight: 600;
+}
+
+.desc_sec {
+  font-size: 1.3rem;
+  margin-block: 1.25rem;
+}
+
+.saiba_mais {
+  font-size: 0.9rem;
+  color: #718143;
+}
+
+.btn_sec {
+  padding-block: 13px;
+  line-height: 16px;
+  padding-inline: 2.9rem;
+  height: 42px;
+  width: 60%;
+  border-radius: 1000px;
+  background: rgba(255, 147, 53, 0.9);
+  background: linear-gradient(to bottom, white);
+  cursor: pointer;
+}
+
+.btn_sec:hover {
+  padding-block: 13px;
+  line-height: 16px;
+  padding-inline: 2.9rem;
+  height: 42px;
+  width: 65%;
+  border-radius: 1000px;
+  background: rgba(255, 147, 53, 0.6);
+  background: linear-gradient(to bottom, white);
+  cursor: pointer;
+}
+.desc_sec {
+  font-size: 1rem;
+}
+@media (max-width: 767px) {
+  .promotion,
+  .atencao {
+    font-size: 1.2rem;
+  }
+  .title_sec {
+    font-size: 1.5rem;
+  }
+  .desc_sec {
     font-size: 1rem;
-    font-weight: bold;
-    line-height: 2px;
+  }
 }
-
-.atencao{
-    color: #718143;
-    font-size: 0.9rem;
+@media (min-width: 768px) and (max-width: 991px) {
+  .promotion,
+  .atencao {
+    font-size: 1.5rem;
+  }
+  .title_sec {
+    font-size: 2rem;
+  }
+  .desc_sec {
+    font-size: 1.1rem;
+  }
 }
-
-.title_sec{
-    margin-bottom: 2rem;
-    font-size: 2.2rem;
-    word-spacing: -7px;
-    font-weight: 600;
+@media (min-width: 992px) {
+  .promotion,
+  .atencao {
+    font-size: 1.8rem;
+  }
+  .title_sec {
+    font-size: 2.5rem;
+  }
+  .desc_sec {
+    font-size: 1.2rem;
+  }
 }
-
-.desc_sec{
-    font-size: 1.3rem;
-    margin-block: 1.25rem;
-
-}
-
-.saiba_mais{
-    font-size: 0.9rem;
-    color: #718143;
-}
-
-.btn_sec{
-    padding-block: 13px;
-    line-height: 16px;
-    padding-inline: 2.9rem;
-    height: 42px;
-    width: 95%;
-    border-radius: 1000px;
-    background: rgba(255, 147, 53, 0.9);
-    background: linear-gradient(to bottom, white);
-    cursor: pointer;
-}
-
-.btn_sec:hover{
-    padding-block: 13px;
-    line-height: 16px;
-    padding-inline: 2.9rem;
-    height: 42px;
-    width: 95%;
-    border-radius: 1000px;
-    background: rgba(255, 147, 53, 0.6);
-    background: linear-gradient(to bottom, white);
-    cursor: pointer;
-}
-

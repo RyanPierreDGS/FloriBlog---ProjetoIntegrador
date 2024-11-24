@@ -5,9 +5,19 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #718143;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 147, 53, 0.8);
+  }
 }
-
-
 
 body {
   font-family: Arial, sans-serif;
@@ -49,7 +59,7 @@ body.dark {
   height: 100vh;
   margin: 0;
   .container {
-    background:#2E7D32;
+    background: #2e7d32;
   }
   .next-btn {
     background-color: #04335b;
@@ -71,7 +81,6 @@ body.dark {
     background-color: #6486a2;
   }
 }
-
 
 .checkbox {
   opacity: 0;
@@ -111,7 +120,6 @@ body.dark {
 .fa-sun {
   color: #f39c12;
 }
-
 
 /*----------------- ////// ------------------*/
 

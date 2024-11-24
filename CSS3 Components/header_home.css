@@ -16,7 +16,7 @@
 }
 
 #header.scroll {
-    background-color: rgba(0, 0, 0, 0.8); /* Cor sólida escura após rolagem */
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .header__name-logo{

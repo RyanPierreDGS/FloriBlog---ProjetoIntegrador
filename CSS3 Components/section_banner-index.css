@@ -1,18 +1,14 @@
-#sec_index-primeira {
-  height: 720px;
-  width: 100%;
-  background: #fff0dd url("../Recursos Imagens/sunflower.jpg"); /*Definindo a imagem como background*/
-  background-size: cover; /* A imagem cobre toda a área da section */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Evita que a imagem se repita */
-  border: 1px solid rgba(98, 99, 71, 0.2);
+button a{
+  color: white;
+  text-decoration: none;
 }
 
+
 #sec_index-primeira {
-  height: 100vh;
-  /* background-image: url('../Recursos Imagens/sunflower.jpg'); */
-  background-size: cover;
-  background-position: center;
+  height: 100vh; /* Ocupa a altura total da tela */
+  width: 100%;
+  background: #fff0dd url("../Recursos Imagens/sunflower.jpg") center / cover no-repeat;
+  border: 1px solid rgba(98, 99, 71, 0.2);
 }
 
 #container_sec-primeira {
@@ -71,41 +67,40 @@
 }
 
 .btn_sec {
-  padding-block: 13px;
-  line-height: 16px;
-  padding-inline: 2.9rem;
-  height: 42px;
-  width: 60%;
+  display: inline-block; /* Botão se ajusta ao conteúdo */
+  padding: 13px 2.9rem;
+  height: auto; /* Altura baseada no padding */
   border-radius: 1000px;
   background: rgba(255, 147, 53, 0.9);
-  background: linear-gradient(to bottom, white);
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: width 0.3s ease-in-out;
   cursor: pointer;
 }
 
 .btn_sec:hover {
-  padding-block: 13px;
-  line-height: 16px;
-  padding-inline: 2.9rem;
-  height: 42px;
-  width: 65%;
-  border-radius: 1000px;
   background: rgba(255, 147, 53, 0.6);
-  background: linear-gradient(to bottom, white);
-  cursor: pointer;
+  width: 65%; /* Efeito de expansão */
 }
+
 .desc_sec {
   font-size: 1rem;
 }
 @media (max-width: 767px) {
-  .promotion,
-  .atencao {
+  .promotion, .atencao {
     font-size: 1.2rem;
   }
   .title_sec {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   .desc_sec {
     font-size: 1rem;
+  }
+  #container_sec-primeira {
+    width: 90%;
+    margin: 2rem auto; /* Centraliza no mobile */
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {

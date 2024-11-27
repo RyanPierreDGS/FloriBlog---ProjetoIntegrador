@@ -1,18 +1,13 @@
-.section {
+.banner{
     height: 720px;
     width: 100%;
-    background: src="/sunflower.jpg"; /*Definindo a imagem como background*/
+    background: url('/public/sunflower.png'); /*Definindo a imagem como background*/
     background-size: cover; /* A imagem cobre toda a área da section */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     border: 1px solid rgba(98, 99, 71, 0.2);
   }
-  
-.section {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-  }
+
   
   #container_sec-primeira {
     width: 45%;

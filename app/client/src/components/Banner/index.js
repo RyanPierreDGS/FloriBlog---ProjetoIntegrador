@@ -3,7 +3,7 @@ import styles from './Banner.modules.css';
 
 function Banner() {
     return(
-        <section id="sec_index-primeira" className={styles.Banner}> 
+        <div className={styles.Banner}> 
         <div id="container_sec-primeira">
             <div class="container_sec-info text-center"> 
                 <span class="promotion d-block mb-3 text-uppercase">
@@ -22,7 +22,7 @@ function Banner() {
                 <button class="btn_sec">Saiba mais...</button>
             </div>
         </div>
-    </section> 
+    </div> 
     )
 }
 

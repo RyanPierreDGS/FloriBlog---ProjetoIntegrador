@@ -13,3 +13,11 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// Detecta se está na página principal (index.html)
+const isHomePage = window.location.pathname.endsWith("index.html");
+
+const header = document.getElementById("header");
+if (isHomePage) {
+    header.classList.add("fixed-header");
+}

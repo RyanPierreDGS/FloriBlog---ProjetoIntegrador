@@ -1,5 +1,8 @@
 #postContent {
     display: flex;
+    border: 2px solid red;
+    height: 852px;
+    max-height: 1201px;
     margin-inline: auto;
     justify-content: center;
     align-items: center;
@@ -25,14 +28,16 @@
 }
 
 .post-image {
-    width: 100%;
-    height: auto;
+    width: 60%;
+    height: 250px;
+    max-height: 660px;
     border-radius: 8px;
     margin-bottom: 20px;
+    margin-inline: 190.5px;
 }
 
 .post-description p {
-    font-size: 1.2rem;
+    font-size: 1.025rem;
     line-height: 1.6;
     color: #333;
     margin-bottom: 15px;
@@ -45,7 +50,7 @@
 }
 
 .post-sources h3 {
-    font-size: 1.5rem;
+    font-size: 0.95rem;
     color: #333;
     margin-bottom: 10px;
 }

@@ -28,7 +28,7 @@ function startGame() {
 function setNextQuestion() {
     resetState();
     showQuestion(questions[currentQuestionIndex]);
-    startTimer(); // Inicia o timer para a nova pergunta
+    startTimer();
 }
 
 // Mostrar questão e respostas
@@ -37,24 +37,24 @@ function showQuestion(question) {
     const answerButtonsElement = document.getElementById("answer-buttons");
 
     questionElement.innerText = question.question;
-    answerButtonsElement.innerHTML = ""; // Limpa os botões de resposta
+    answerButtonsElement.innerHTML = "";
 
     question.answers.forEach((answer) => {
         const button = document.createElement("button");
         button.innerText = answer.text;
         button.classList.add("btn");
         button.dataset.correct = answer.correct;
-        button.onclick = () => selectAnswer(button, answer.explanation); // Adiciona explicação
+        button.onclick = () => selectAnswer(button, answer.explanation);
         answerButtonsElement.appendChild(button);
     });
 }
 
 // Reinicia o estado
 function resetState() {
-    clearInterval(timerInterval); // Para o timer anterior
-    timerCount = 15; // Reseta o contador
+    clearInterval(timerInterval);
+    timerCount = 15;
     document.getElementById("next-btn").style.display = "none";
-    document.getElementById("explanation").innerText = ""; // Limpa a explicação
+    document.getElementById("explanation").innerText = "";
 }
 
 // Timer de 15 segundos
@@ -69,7 +69,7 @@ function startTimer() {
         if (timerCount <= 0) {
             clearInterval(timerInterval);
             alert("Tempo esgotado!");
-            showCorrectAnswer(); // Mostra a resposta correta
+            showCorrectAnswer();
             document.getElementById("next-btn").style.display = "block";
         }
     }, 1000);
@@ -77,19 +77,19 @@ function startTimer() {
 
 // Seleção da resposta
 function selectAnswer(button, explanation) {
-    clearInterval(timerInterval); // Para o timer
+    clearInterval(timerInterval);
     const correct = button.dataset.correct === "true";
 
     if (correct) {
         score++;
         document.getElementById("score").innerText = `Pontos: ${score}`;
-        button.style.backgroundColor = "#66bb6a"; // Verde
+        button.style.backgroundColor = "#66bb6a";
     } else {
-        button.style.backgroundColor = "#ef5350"; // Vermelho
+        button.style.backgroundColor = "#ef5350";
     }
 
     showCorrectAnswer();
-    document.getElementById("explanation").innerText = explanation; // Mostra explicação
+    document.getElementById("explanation").innerText = explanation;
 
     document.querySelectorAll(".btn").forEach((btn) => (btn.disabled = true));
     document.getElementById("next-btn").style.display = "block";
@@ -99,7 +99,7 @@ function selectAnswer(button, explanation) {
 function showCorrectAnswer() {
     document.querySelectorAll(".btn").forEach((button) => {
         if (button.dataset.correct === "true") {
-            button.style.backgroundColor = "#66bb6a"; // Destaque verde
+            button.style.backgroundColor = "#66bb6a";
         }
     });
 }
@@ -127,7 +127,6 @@ function resetGame() {
     document.getElementById("name-input").value = "";
 }
 
-// Perguntas e respostas com explicações
 const questions = [
     {
         question: "Qual é o principal cultivo agrícola do Brasil?",
@@ -138,5 +137,4 @@ const questions = [
             { text: "Cana-de-açúcar", correct: false, explanation: "Apesar de amplamente cultivada, a soja domina o mercado." },
         ],
     },
-    // Outras perguntas...
 ];

@@ -54,7 +54,7 @@
   background: white;
   width: 250px;
   height: 330px;
-  padding-block: 16px;
+  padding-block: 8px;
   padding-inline: 15px;
   margin-inline: auto;
   margin-block: 26px;
@@ -99,7 +99,7 @@
   height: 30px;
   padding-block: 4px;
   position: relative;
-  top: 20px;
+  top: 8px;
   border-radius: 12px;
   cursor: pointer;
   background: #fd9c47;
@@ -111,7 +111,7 @@
   width: 85%;
   padding-block: 4px;
   position: relative;
-  top: 20px;
+  top: 8px;
   border-radius: 12px;
   cursor: pointer;
   color: white;

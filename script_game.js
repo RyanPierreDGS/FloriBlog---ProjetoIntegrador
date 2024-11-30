@@ -138,3 +138,44 @@ const questions = [
         ],
     },
 ];
+
+// Função para finalizar o jogo e exibir a tela de finalização
+function finishGame() {
+    document.getElementById("quiz-container").style.display = "none"; // Esconde o container do quiz
+    document.getElementById("start-container").style.display = "none"; // Garante que a tela inicial não apareça
+
+    const totalQuestions = questions.length;
+    const wrongAnswers = totalQuestions - score;
+    const accuracy = ((score / totalQuestions) * 100).toFixed(2);
+
+    // Preenche os dados na tela de finalização
+    document.getElementById("final-player-name").innerText = playerName;
+    document.getElementById("total-questions").innerText = totalQuestions;
+    document.getElementById("correct-answers").innerText = score;
+    document.getElementById("wrong-answers").innerText = wrongAnswers;
+    document.getElementById("accuracy-percentage").innerText = accuracy;
+
+    // Exibe a tela de finalização
+    document.getElementById("end-screen").style.display = "block";
+}
+
+// Função para reiniciar o jogo
+function restartGame() {
+    document.getElementById("end-screen").style.display = "none"; // Esconde a tela de finalização
+    resetGame(); // Chama a função que reinicia o jogo
+}
+
+// Função para redirecionar para a página inicial
+function goToHome() {
+    window.location.href = "index.html"; // Redireciona para a página inicial
+}
+
+// Ajuste na função para exibir a tela de finalização ao invés de alertar
+function nextQuestion() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        setNextQuestion(); // Configura a próxima pergunta
+    } else {
+        finishGame(); // Exibe a tela de finalização
+    }
+}

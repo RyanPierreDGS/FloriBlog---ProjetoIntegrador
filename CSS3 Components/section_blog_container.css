@@ -1,5 +1,5 @@
 #sec_blog-terceira{
-    margin-block: 0.5rem;
+  margin-block: 0.5rem;
 }
 
 #container_blog-cards {
@@ -23,7 +23,7 @@
   box-shadow: 6px 2px 15px gray;
 }
 
-#container_blog-cards.expanded {
+#container_blog-cards.expanded, #sec_blog-terceira {
   overflow: visible;
 }
 

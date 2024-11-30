@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Declarando Fonts.... -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS3 Recursos/CSS3 Componentes/normalize.css">
     <link rel="stylesheet" type="text/css" href="CSS3 Recursos/CSS3 Componentes/style_layout.css">
     <link rel="stylesheet" type="text/css" href="CSS3 Components/style_gameagro.css">
@@ -49,14 +53,14 @@
     <section id="section_game">
         <div class="container">
             <div id="start-container">
-                <h1>Bem-vindo ao FloriGame</h1>
-                <h4>Seu Game favorito sobre Floricultura</h4>
+                <h1>Bem-vindo ao <span class="tagLaranja">Flower<span class="tagVerde">Quiz</span></span></h1>
+                <h4>Seu Game sobre Floricultura e Jardinagem</h4>
                 <input type="text" id="name-input" placeholder="Digite seu nome">
                 <button id="start-btn" class="btn" onclick="startGame()">Começar</button>
             </div>
 
             <div id="quiz-container" style="display:none;">
-                <h1>Quiz Agro</h1>
+                <h1>FlowerQuiz</h1>
                 <h3 id="player-name"></h3>
                 <p id="score">Pontos: 0</p>
                 <p id="high-score">Recorde: 0</p>
@@ -75,6 +79,17 @@
             </div>
         </div>
     </section>
+    <div id="end-screen" style="display: none; text-align: center; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <h1>Parabéns, <span id="final-player-name"></span>!</h1>
+        <p>Você respondeu <span id="total-questions"></span> questões.</p>
+        <p>Acertos: <span id="correct-answers"></span></p>
+        <p>Erros: <span id="wrong-answers"></span></p>
+        <p>Porcentagem de acerto: <span id="accuracy-percentage"></span>%</p>
+        <div class="end-buttons" style="margin-top: 20px;">
+            <button class="btn" onclick="goToHome()">Ir para Home</button>
+            <button class="btn" onclick="restartGame()">Jogar Novamente</button>
+        </div>
+    </div>
     <footer style="font-size: 1rem; position: relative; bottom: 0; width: 100%; background-color: #6D8344; color: white; text-align: center; padding: 10px;">  <!--Inicio da Section de rodapé-->
     <p>FloriBlog &copy; 2024 Direitos Reservados
     </footer>  <!--final da sectionde rodapé-->

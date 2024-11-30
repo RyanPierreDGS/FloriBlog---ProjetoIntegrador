@@ -1,8 +1,7 @@
 #postContent {
     display: flex;
-    border: 2px solid red;
-    height: 852px;
-    max-height: 1201px;
+    height: 1060px;
+    max-height: 6000px;
     margin-inline: auto;
     justify-content: center;
     align-items: center;

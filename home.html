@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./cssComponents/style_layout.css">
   <link rel="stylesheet" href="./cssComponents/div_info.css">
   <link rel="stylesheet" href="./cssComponents/modos.css">
+  <link rel="stylesheet" href="./cssComponents/cards.css">
   <link rel="icon" href="./icon.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,86 +57,77 @@
       </div>
     </div>
   </nav>
-  <div>
-    <div class="banner">
-      <div class="container_promo">
-        <div class="container_info ms-2">
-          <span class="promotion mb-3 text-uppercase">
-            Por tempo limitado!!!
-          </span>
-          <span class="atencao mb-3">
-            Não perca essa chance.
-          </span>
-          <h2 class=" mb-4">Aprenda o passo-a-passo para abrir sua Floricultura!!</h2>
-          <p class="desc_sec mb-4">
-            Você é apaixonado(a) por flores? Já sonhou em abrir e tocar sozinha sua própria rede de
-            Floriculturas?
-            Gostaria de entender como você poderá abrir sua própria floricultura do ZERO?
-            <span class="saiba_mais"> Clique em Saiba mais e aproveite.</span>
-          </p>
-          <a class="btn_sec" href="./InternPages/FloriComercio.html">Saiba mais...</a>
+
+  <div class="banner">
+    <div class="container_promo">
+      <div class="container_info ms-2">
+        <span class="promotion mb-3 text-uppercase">Por tempo limitado!!!</span>
+        <span class="atencao mb-3">Não perca essa chance.</span>
+        <h2 class="mb-4">Aprenda o passo-a-passo para abrir sua Floricultura!!</h2>
+        <p class="desc_sec mb-4">
+          Você é apaixonado(a) por flores? Já sonhou em abrir e tocar sozinha sua própria rede de Floriculturas?
+          Gostaria de entender como você poderá abrir sua própria floricultura do ZERO?
+          <span class="saiba_mais">Clique em Saiba mais e aproveite.</span>
+        </p>
+        <a class="btn_sec" href="./InternPages/FloriComercio.html">Saiba mais...</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="div_info">
+    <div class="info_title">Conheça sobre nós</div>
+    <div id="container_info--pr">
+      <div id="box_ponto"> <!-- O conteúdo dinâmico aparecerá aqui --> </div>
+      <div id="box_pontos">
+        <div class="box_info-pontos"
+          data-info="O FloriBlog é uma plataforma online dedicada a fornecer informações completas e práticas sobre cuidados com flores e plantas. Nosso objetivo é transformar a paixão dos brasileiros por jardinagem em conhecimento prático e acessível.">
+          Proposta
+        </div>
+        <div class="box_info-pontos"
+          data-info="Buscamos ser a referência em conteúdo sobre jardinagem no Brasil, criando uma comunidade. Nossa missão inclui: Educação, Engajamento, Conexão e Sustentabilidade.">
+          Objetivos
+        </div>
+        <div class="box_info-pontos"
+          data-info="Conhecimento Acessível: Tornar informações sobre jardinagem acessíveis a todos. Aprendizado Contínuo: Incentivar a curiosidade e o aprendizado contínuo. Tecnologia e Interatividade: Criar uma experiência interativa. Respeito ao Meio Ambiente: Promover práticas ecologicamente responsáveis.">
+          Valores
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="div_info">
-      <div class="info_title">Conheça sobre nós</div>
-      <div id="container_info--pr">
-        <div id="box_ponto"> <!-- O conteúdo dinâmico aparecerá aqui --> </div>
-        <div id="box_pontos">
-          <div class="box_info-pontos"
-            data-info="O FloriBlog é uma plataforma online dedicada a fornecer informações completas e práticas sobre cuidados com flores e plantas. 
-            Nosso objetivo é transformar a paixão dos brasileiros por jardinagem em conhecimento prático e acessível. Você ama flores, mas sente falta de um ambiente com informações completas e práticas para cuidar delas? Milhões de pessoas no Brasil compartilham desse desejo, e é pensando nisso, que criamos o FloriBlog, para transformar essa paixão em conhecimento prático.">
-            Proposta </div>
-          <div class="box_info-pontos"
-            data-info="Buscamos ser a referência em conteúdo sobre jardinagem no Brasil, criando uma comunidade. Nossa missão inclui:
-             
-            Educação: Oferecer artigos, dicas e tutoriais de alta qualidade, tanto de especialistas quanto da comunidade. 
-            Engajamento: Proporcionar uma experiência interativa e gamificada através de quizzes e progresso do perfil do usuário. 
-            Conexão: Construir uma rede de amantes de jardinagem que se apoiam e inspiram mutuamente. 
-            Sustentabilidade: Promover práticas de jardinagem que contribuem para um ambiente mais verde e saudável incentivando uma maior conexão com a natureza e o bem-estar que vem com o cultivo de plantas.">
-            Objetivos </div>
-          <div class="box_info-pontos"
-            data-info="Conhecimento Acessível: Tornar informações sobre jardinagem acessíveis a todos, independentemente do nível de experiência.
-             Aprendizado Contínuo: Incentivar a curiosidade e o aprendizado contínuo, tanto através de artigos especializados quanto da troca de experiências na comunidade.
-            Tecnologia e Interatividade: Utilizar tecnologia para criar uma experiência interativa e envolvente, que inclui quizzes e conteúdos gamificados.
-            Respeito ao Meio Ambiente: Promover práticas de jardinagem que são ecologicamente responsáveis e que ajudam a preservar a natureza.">
-            Valores </div>
-        </div>
-      </div>
+  <div class="div_info">
+    <div class="info_title">Curiosidades</div>
+    <div id="container_blog-cards">
+      <div id="divInfoCards"></div>
     </div>
+  </div>
 
-    <div class="div_info">
-      <div class="info_title">Quizzes</div>
-      <div></div>
-      <div class="" id="sec_game">
-        <div id="container_game">
-          <img class="game_img" src="./gamezone.jpg">
-          <div id="aside_game">
-            <div id="desc_game">
-              FloriGame
-            </div>
-
-            <div id="btn_cont">
-              <a href="#">
-                Jogar Quizz
-              </a>
-            </div>
+  <div class="div_info">
+    <div class="info_title">Quizzes</div>
+    <div class="" id="sec_game">
+      <div id="container_game">
+        <img class="game_img" src="./gamezone.jpg">
+        <div id="aside_game">
+          <div id="desc_game">FloriGame</div>
+          <div id="btn_cont">
+            <a href="#">Jogar Quizz</a>
           </div>
         </div>
       </div>
     </div>
-    <footer
-      style="font-size: 1rem; position: relative; bottom: 0; width: 100%; background-color: #718143; color: white; text-align: center; padding: 10px;">
-      <p>FloriBlog &copy; 2024 Direitos Reservados
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
-    <script src="./js/container_info-second.js"></script>
-    <script src="./js/header.js"></script>
+  </div>
 
+  <footer
+    style="font-size: 1rem; position: relative; bottom: 0; width: 100%; background-color: #718143; color: white; text-align: center; padding: 10px;">
+    <p>FloriBlog &copy; 2024 Direitos Reservados</p>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="./js/container_info-second.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/card.js"></script>
 </body>
 
 </html>

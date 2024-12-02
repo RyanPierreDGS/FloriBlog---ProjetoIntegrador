@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Gelato de creme",
+    "image": "https://www.jundiaqui.com.br/wp-content/uploads/2017/09/sorvete.jpg",
+    "description": "Sorvete artesanal de creme feito a base de leite e creme de leite, com toque de baunilha. Sem aromatizantes artificiais, sem corantes, zero  adição de açúcar, zero glúten e zero lactose.",
+    "price": 42.9
+  },
+  {
+    "name": "Sorvete de Pistache",
+    "image": "https://mandareceitas.com.br/wp-content/uploads/2023/12/Kibon-Sorvete-de-Pistache-1024x585.jpg",
+    "description": "Sorvete artesanal de Pistache, feito a base de leite, creme de leite e aromatizado com pasta de pistache natural, sem aromatizantes artificiais, sem corantes, zero  adição de açúcar, glúten e lactose.",
+    "price": 45.9
+  },
+  {
+      "name": "Gelato de baunilha",
+      "image": "https://images.prismic.io/zerou-delicias/Zv2y17VsGrYSwUNj_WhatsAppImage2024-10-02at16.42.46-2-.jpeg?auto=format,compress",
+      "description": "Sorvete artesanal de baunilha, feito a base de leite e creme de leite. sem aromatizantes artificiais, zero  adição de açúcar,  zero glúten e zero lactose.",
+      "price": 45.9
+    },
+  {
+    "name": "Gelato de Chocolate",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnoa-PB7jvL4502znWJpiY76eTDCa997GJjw&s",
+    "description": "Sorvete artesanal de chocolate feito a base de leite, creme de leite, cacau e chocolate. Sem aromatizantes artificiais, sem corantes, zero  adição de açúcar, zero glúten e zero lactose.",
+    "price": 42.9
+  },
+  {
+    
+      "name": "Gelato de Morango",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYCm--EzI1LimyNUUeBL0QQ6PyJyLKVik9lA&s",
+      "description": "Sorvete artesanal de morango feito a base de leite, creme de leite aromatizado com morangos. Sem aromatizantes artificiais, sem corantes, sem  adição de açúcar, sem glúten e sem lactose.",
+      "price": 42.9
+    }
+  ,
+  {
+    "name": "Petit Gateau",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeH3C_O8B7FxRF1iqE8JFT89muyDKvYdnTwg&s",
+    "description": "Delicioso petit gateau feito a base de chocolate 50%.Â Zero adicao de acucar,  zero gluten e zero lactose.",
+    "price": 29.9
+  },
+  {
+    "name": "Picolé",
+    "image": "https://images.prismic.io/zerou-delicias/65a960277a5e8b1120d5abb8_WhatsAppImage2024-01-18at13.23.35-1-.jpeg?auto=format%2Ccompress&rect=208%2C297%2C779%2C1039&w=1200&h=1600",
+    "description": "Sabores disponiveis: La bom (chocolate) e La creme ( creme)",
+    "price": 19.9
+  }
+]

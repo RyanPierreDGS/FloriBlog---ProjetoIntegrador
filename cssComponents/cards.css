@@ -1,0 +1,98 @@
+#container_blog-cards {
+  border: 1px solid rgba(98, 99, 71, 0.2);
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 26px;
+  box-shadow: 6px 2px 15px gray;
+}
+
+.divCard {
+  border: 1px solid rgba(98, 99, 71, 0.2);
+  background: white;
+  width: 450px;
+  min-height: 400px;
+  padding-block: 16px;
+  padding-inline: 15px;
+  margin-inline: auto;
+  margin-block: 26px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 6px 2px 15px gray;
+}
+
+.divCard h2 {
+  font-size: 1.3rem;
+  line-height: 22px;
+  text-align: left;
+  margin-left: 6px;
+  margin-bottom: 4px;
+  overflow: hidden; /* Oculta o excesso de texto */
+  text-overflow: ellipsis; /* Adiciona reticências (...) */
+  width: 100%;
+}
+
+.divCard h3 {
+  font-size: 1.1rem;
+  line-height: 22px;
+  text-align: left;
+  margin-left: 6px;
+  margin-bottom: 4px;
+  padding: 5px;
+  width: 100%;
+}
+
+.card_image {
+  width: 95%;
+  max-height: 110px;
+  border-radius: 12px;
+}
+
+.divCard button {
+  margin-inline: auto;
+  width: 75%;
+  height: 40px;
+  border-radius: 16px;
+  padding-block: 4px;
+  cursor: pointer;
+  background: #fd9c47;
+  transition: width 0.3s ease;
+  color: white;
+}
+
+.divCard button:hover {
+  margin-inline: auto;
+  width: 85%;
+  padding-block: 4px;
+  position: relative;
+  cursor: pointer;
+  color: white;
+}
+
+.btn_card a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn_showMore {
+  position: relative;
+  top: 200px;
+  width: 240px;
+  height: 40px;
+  border-radius: 48px;
+  border: 1px solid rgba(98, 99, 71, 0.2);
+  color: #f0f4f0;
+  background: #6d8344;
+  font-weight: 500;
+  margin-inline: auto;
+  transition: width 0.9s ease;
+}
+
+.btn_showMore:hover {
+  width: 320px;
+}

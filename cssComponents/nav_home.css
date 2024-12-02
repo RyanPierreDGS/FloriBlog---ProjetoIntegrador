@@ -1,0 +1,154 @@
+/*-----------------------------Estilizando nav  */
+#nav {
+  position: fixed;
+  width: 100%;
+  margin-block: 0;
+  height: 80px;
+  padding: 20px;
+  color: white;
+  background-color: transparent; /* Torna o fundo transparente inicialmente */
+  transition: background-color 0.3s ease;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 6rem;
+  align-items: center;
+}
+
+#nav.scroll {
+  background-color: rgba(255, 255, 255, 0.9); /* Cor sólida */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#navbarSupportedContent.scroll {
+  background-color: rgba(255, 255, 255, 0.9); /* Cor sólida */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
+}
+
+.nav_logo {
+  display: block;
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding-block: 14px;
+  padding-inline: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.custom-nav .nav-item {
+  margin-right: 20px; /* Ajuste o valor conforme necessário */
+}
+
+.custom-nav .nav-item:last-child {
+  margin-right: 0; /* Remove a margem do último item */
+}
+
+/* #nav.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+} */
+
+.flori {
+  color: #718143;
+}
+
+.blog {
+  color: rgba(255, 147, 53, 0.8);
+}
+
+.nav-menu {
+  border-radius: 500px;
+  padding-block: 15px;
+  padding-inline: 22px;
+}
+
+.menu_item {
+  list-style: none;
+  display: flex;
+  font-size: 1.1em;
+}
+
+.nav__nav-link {
+  padding-block: 8px;
+  padding-inline: 16px;
+  text-decoration: none;
+  color: #718143;
+}
+
+.nav__nav-link:hover {
+  padding-block: 8px;
+  padding-inline: 16px;
+  text-decoration: none;
+  border-bottom: 3px solid rgba(255, 147, 53, 0.8);
+}
+
+/* Responsividade para Dispositivos Móveis
+@media (max-width: 767px) {
+  nav,
+  footer {
+    padding: 10px;
+  }
+  .nav__name-logo {
+    flex-direction: column;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container_sec-info {
+    text-align: center;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.flori {
+  color: #718143;
+}
+
+.blog {
+  color: rgba(255, 147, 53, 0.8);
+}
+
+#nav__nav-menu {
+  border-radius: 500px;
+  padding-block: 15px;
+  padding-inline: 22px;
+  list-style: none;
+  display: flex;
+  font-size: 1.1em;
+}
+
+#nav__menu {
+  list-style: none;
+  display: flex;
+  font-size: 1.1em;
+}
+
+.nav__nav-link {
+  padding-block: 8px;
+  padding-inline: 16px;
+  margin-inline: 8px;
+  text-decoration: none;
+  color: #718143;
+}
+
+.nav__nav-link:hover {
+  padding-block: 8px;
+  padding-inline: 16px;
+  text-decoration: none;
+  border-bottom: 3px solid rgba(255, 147, 53, 0.8);
+} */

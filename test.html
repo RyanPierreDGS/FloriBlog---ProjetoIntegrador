@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Comentários</title>
+    <style>
+        /* Estilos básicos para formatação */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+
+        #comments-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        #comments-list li {
+            background: #f4f4f4;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Comentários</h1>
+    <ul id="comments-list"></ul>
+
+    <h2>Adicionar Comentário</h2>
+    <form id="comment-form">
+        <input type="text" id="name" placeholder="Seu nome" required>
+        <textarea id="message" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        const commentsList = document.getElementById('comments-list');
+        const commentForm = document.getElementById('comment-form');
+        const nameInput = document.getElementById('name');
+        const messageInput = document.getElementById('message');
+
+        // Função para buscar e exibir comentários
+        function loadComments() {
+            fetch('http://localhost:3001/comments')
+                .then(response => response.json())
+                .then(comments => {
+                    commentsList.innerHTML = '';
+                    comments.forEach(comment => {
+                        const li = document.createElement('li');
+                        li.textContent = `${comment.name}: ${comment.message}`;
+                        commentsList.appendChild(li);
+                    });
+                });
+        }
+
+        // Função para adicionar um novo comentário
+        commentForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const newComment = {
+                name: nameInput.value,
+                message: messageInput.value
+            };
+
+            fetch('http://localhost:3001/comments', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(newComment)
+            })
+                .then(response => response.json())
+                .then(() => {
+                    nameInput.value = '';
+                    messageInput.value = '';
+                    loadComments();
+                });
+        });
+
+        // Carregar comentários ao iniciar
+        loadComments();
+    </script>
+</body>
+
+</html>

@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> O Mundo das Flores || FloriBlog </title>
 
-    <link rel="stylesheet" href="./cssComponents/gameflori.css">
+    <link rel="stylesheet" href="../cssComponents/gameflori.css">
     <link rel="stylesheet" href="./cssComponents/modos.css">
-
+    <link rel="stylesheet" href="./CSS3 Components/header_home.css">
+    <link rel="stylesheet" href="./cssComponents/nav_home.css">
+    <link rel="stylesheet" href="cssComponents/style_layout.css">
     <link rel="icon" href="./icon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,17 +21,44 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg" id="nav">
+        <div class="container-fluid">
+        <a class="navbar-brand nav_logo fs-1 " href="index.html"><span class="flori">Flori</span><span
+            class="blog">Blog</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mt-2" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+                <a style="font-size: 20px; color: #718143;" class="nav-link active nav__nav-link linkfs p-4"
+                aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a style="font-size: 20px; color: #718143;" class="nav-link active nav__nav-link linkfs p-4"
+                href="#sec_game">FloriGame</a>
+            </li>
+            <li class="nav-item">
+                <a style="font-size: 20px; color: #718143;" class="nav-link active nav__nav-link linkfs p-4"
+                href="#container_blog-cards">Curiosidades</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
     <section id="section_game">
-        <div class="container">
+        <div class="game-container">
             <div id="start-container">
-                <h1>Bem-vindo ao <span class="tagLaranja">Flower<span class="tagVerde">Quiz</span></span></h1>
-                <h4>Seu Game sobre Floricultura e Jardinagem</h4>
+                <h1><span class="tagLaranja">FloriGame<span class="tagVerde">Quiz</span></span></h1>
+                <h4 id="subtitulo-game">Seu Game sobre Floricultura e Jardinagem</h4>
                 <input type="text" id="name-input" placeholder="Digite seu nome">
                 <button id="start-btn" class="btn" onclick="startGame()">Começar</button>
             </div>
 
             <div id="quiz-container" style="display:none;">
-                <h1>FlowerQuiz</h1>
+                <h1 class="tagVerde">FlowerQuiz</h1>
                 <h3 id="player-name"></h3>
                 <p id="score">Pontos: 0</p>
                 <p id="high-score">Recorde: 0</p>
@@ -60,6 +89,11 @@
             <button class="btn" onclick="restartGame()">Jogar Novamente</button>
         </div>
     </div>
+
+    <footer
+    style="font-size: 0.9rem; position: relative; bottom: 0; width: 100%; background-color: #718143; color: white; text-align: center; padding: 5px;">
+    <p>FloriBlog &copy; 2024 Direitos Reservados</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

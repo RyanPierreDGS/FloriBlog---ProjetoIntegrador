@@ -1,0 +1,129 @@
+button a{
+  color: white;
+  text-decoration: none;
+}
+
+
+#sec_index-primeira {
+  height: 100vh; /* Ocupa a altura total da tela */
+  width: 100%;
+  background: #fff0dd url("../Recursos Imagens/sunflower.jpg") center / cover no-repeat;
+  border: 1px solid rgba(98, 99, 71, 0.2);
+}
+
+#container_sec-primeira {
+  width: 40%;
+  height: 65%;
+  margin-left: 12rem;
+  margin-block: 120px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 10px;
+  padding-inline: 16px;
+}
+
+.container_sec-info {
+  padding-block: 1rem;
+  padding-inline: 16px;
+}
+
+.promotion {
+  color: rgba(255, 147, 53, 0.9);
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 2px;
+}
+
+.atencao {
+  color: #718143;
+  font-size: 1rem;
+}
+
+.title_sec {
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  word-spacing: -7px;
+  font-weight: 600;
+}
+
+.desc_sec {
+  font-size: 1.3rem;
+  margin-block: 1.25rem;
+}
+
+.saiba_mais {
+  font-size: 0.9rem;
+  color: #718143;
+}
+
+.btn_sec {
+  display: inline-block; /* Botão se ajusta ao conteúdo */
+  padding: 13px 2.9rem;
+  height: auto; /* Altura baseada no padding */
+  border-radius: 1000px;
+  background: rgba(255, 147, 53, 0.9);
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: width 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn_sec:hover {
+  background: rgba(255, 147, 53, 0.6);
+  width: 65%; /* Efeito de expansão */
+}
+
+.desc_sec {
+  font-size: 1rem;
+}
+@media (max-width: 767px) {
+  .promotion, .atencao {
+    font-size: 1.2rem;
+  }
+  .title_sec {
+    font-size: 1.6rem;
+  }
+  .desc_sec {
+    font-size: 1rem;
+  }
+  #container_sec-primeira {
+    width: 90%;
+    margin: 2rem auto; /* Centraliza no mobile */
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .promotion,
+  .atencao {
+    font-size: 1.5rem;
+  }
+  .title_sec {
+    font-size: 2rem;
+  }
+  .desc_sec {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 992px) {
+  .promotion,
+  .atencao {
+    font-size: 1.2rem;
+  }
+  .title_sec {
+    font-size: 2.1rem;
+  }
+  .desc_sec {
+    font-size: 1rem;
+  }
+}

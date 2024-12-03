@@ -27,6 +27,9 @@ function carregarCards() {
 
         const botao = document.createElement("button");
         botao.textContent = "Acessar Conteúdo";
+        botao.addEventListener("click", function () {
+          window.location.href = "home.html";
+        });
 
         card.appendChild(imagem);
         card.appendChild(titulo);

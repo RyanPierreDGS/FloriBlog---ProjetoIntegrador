@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector("#nav, #navbarSupportedContent");
-  const heroHeight = document.querySelector(".container_promo ").offsetHeight;
+  const heroHeight = document.querySelector("#nav ").offsetHeight;
 
   // Define o ponto em que a mudança ocorre (60% da altura da tela)
   const triggerHeight = heroHeight * 0.6;

@@ -1,9 +1,16 @@
+.div-curi {
+  height: auto;
+  min-height: auto;
+  background-color: #fff4dc;
+}
+
 #container_blog-cards {
   border: 1px solid rgba(98, 99, 71, 0.2);
   width: 90%;
   margin: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 26px;

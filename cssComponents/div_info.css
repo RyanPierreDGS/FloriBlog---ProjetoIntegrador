@@ -1,6 +1,6 @@
 .div_info {
   height: auto;
-  min-height: 600px;
+  min-height: 650px;
   background-color: #fff4dc;
 }
 .info_title {
@@ -10,7 +10,7 @@
   font-weight: 500;
   font-size: 3rem;
   margin-top: 15px;
-  height: 50px;
+  height: 60px;
   color: #fd9c47;
   text-shadow: 5px 5px 10px gray;
   border-radius: 1000px;
@@ -23,7 +23,6 @@
   max-width: 1280px;
   margin: auto;
   display: flex;
-
   flex-direction: column;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 26px;
@@ -31,7 +30,7 @@
 }
 #box_ponto {
   height: auto;
-  min-height: 215px;
+  min-height: 310px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +47,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 30px;
+
   border-radius: 46px;
 }
 .box_info-pontos {

@@ -76,19 +76,21 @@
                 <button id="next-btn" class="next-btn" onclick="nextQuestion()">Próxima</button>
             </div>
         </div>
-    </section>
-    <div id="end-screen"
-        style="display: none; text-align: center; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <div id="end-screen">
         <h1>Parabéns, <span id="final-player-name"></span>!</h1>
         <p>Você respondeu <span id="total-questions"></span> questões.</p>
         <p>Acertos: <span id="correct-answers"></span></p>
         <p>Erros: <span id="wrong-answers"></span></p>
         <p>Porcentagem de acerto: <span id="accuracy-percentage"></span>%</p>
         <div class="end-buttons" style="margin-top: 20px;">
-            <button class="btn" onclick="goToHome()">Ir para Home</button>
-            <button class="btn" onclick="restartGame()">Jogar Novamente</button>
+            <a class="btn" href="index.html">Ir para Home</a>
+            <a class="btn" href="games.html">Reiniciar Quiz</a>
+            <!-- <button class="btn" src onclick="goToHome()">Ir para Home</button>
+            <button class="btn" onclick="restartGame()">Jogar Novamente</button> -->
         </div>
     </div>
+    </section>
+
 
     <footer
     style="font-size: 0.9rem; position: relative; bottom: 0; width: 100%; background-color: #718143; color: white; text-align: center; padding: 5px;">

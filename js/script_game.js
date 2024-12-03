@@ -68,7 +68,6 @@ function startTimer() {
 
     if (timerCount <= 0) {
       clearInterval(timerInterval);
-      alert("Tempo esgotado!");
       showCorrectAnswer();
       document.getElementById("next-btn").style.display = "block";
     }
@@ -129,28 +128,269 @@ function resetGame() {
 
 const questions = [
   {
-    question: "Qual é o principal cultivo agrícola do Brasil?",
+    question: "01 - Qual característica é exclusiva do Manacá da Serra?",
     answers: [
       {
-        text: "Soja",
+        text: "Raízes agressivas",
+        correct: false,
+        explanation:
+          "O Manacá da Serra possui raízes pouco agressivas, ideal para arborização urbana.",
+      },
+      {
+        text: "Mudança de cor das flores",
         correct: true,
         explanation:
-          "A soja é o principal cultivo devido à sua grande exportação.",
+          "O Manacá da Serra é a única árvore do seu gênero que apresenta mudança de cor nas flores.",
       },
       {
-        text: "Milho",
+        text: "Flores amarelas",
         correct: false,
-        explanation: "Embora importante, o milho é menos exportado que a soja.",
+        explanation: "As flores do Manacá da Serra não são amarelas, mas mudam de branco para rosa e roxo.",
       },
       {
-        text: "Café",
+        text: "Altura máxima de 8 metros",
         correct: false,
-        explanation: "O café é relevante, mas o Brasil é mais forte na soja.",
+        explanation: "O Manacá da Serra pode atingir até 12 metros de altura.",
+      },
+    ],
+  },
+  {
+    question: "02 - Qual é a principal função das plantas carnívoras?",
+    answers: [
+      {
+        text: "Capturar insetos por diversão",
+        correct: false,
+        explanation:
+          "As plantas carnívoras capturam insetos para suplementar sua dieta com nutrientes, não por diversão.",
       },
       {
-        text: "Cana-de-açúcar",
+        text: "Sobreviver em solos pobres em nutrientes",
+        correct: true,
+        explanation:
+          "As plantas carnívoras se adaptaram para capturar insetos devido à falta de nutrientes nos solos em que vivem.",
+      },
+      {
+        text: "Atrair polinizadores",
         correct: false,
-        explanation: "Apesar de amplamente cultivada, a soja domina o mercado.",
+        explanation: "Embora algumas possam atrair polinizadores, essa não é sua principal função.",
+      },
+      {
+        text: "Propagar espécies invasoras",
+        correct: false,
+        explanation: "As plantas carnívoras não propagam espécies invasoras.",
+      },
+    ],
+  },
+  {
+    question: "03 - Qual é a altura máxima que a Quaresmeira pode alcançar?",
+    answers: [
+      {
+        text: "5 metros",
+        correct: false,
+        explanation: "A Quaresmeira pode alcançar alturas maiores do que 5 metros.",
+      },
+      {
+        text: "12 metros",
+        correct: true,
+        explanation:
+          "A Quaresmeira pode alcançar até 12 metros de altura.",
+      },
+      {
+        text: "20 metros",
+        correct: false,
+        explanation: "A altura máxima da Quaresmeira é de 12 metros, não 20 metros.",
+      },
+      {
+        text: "8 metros",
+        correct: false,
+        explanation: "Embora a Quaresmeira possa medir 8 metros, essa não é sua altura máxima.",
+      },
+    ],
+  },
+  {
+    question: "04 - Qual é o principal uso da Monstera adansonii em decoração?",
+    answers: [
+      {
+        text: "Como cerca-viva",
+        correct: false,
+        explanation:
+          "A Monstera adansonii é mais usada como elemento decorativo em ambientes internos devido à sua aparência interessante.",
+      },
+      {
+        text: "Para jardinagem vertical",
+        correct: true,
+        explanation:
+          "A Monstera adansonii é ideal para jardinagem vertical, compondo o estilo urban jungle.",
+      },
+      {
+        text: "Como árvore de sombra",
+        correct: false,
+        explanation: "A Monstera adansonii é uma planta de interior, não uma árvore de sombra.",
+      },
+      {
+        text: "Em projetos de reflorestamento",
+        correct: false,
+        explanation: "A Monstera adansonii não é comumente usada em projetos de reflorestamento.",
+      },
+    ],
+  },
+  {
+    question: "05 - Qual planta é conhecida como 'Cacto-da-Páscoa'?",
+    answers: [
+      {
+        text: "Flor-de-maio",
+        correct: true,
+        explanation:
+          "A Flor-de-maio é também conhecida como 'Cacto-da-Páscoa' devido ao seu período de floração.",
+      },
+      {
+        text: "Monstera adansonii",
+        correct: false,
+        explanation: "A Monstera adansonii não é conhecida como 'Cacto-da-Páscoa'.",
+      },
+      {
+        text: "Lobelia brasiliensis",
+        correct: false,
+        explanation: "A Lobelia brasiliensis não é conhecida como 'Cacto-da-Páscoa'.",
+      },
+      {
+        text: "Manacá da Serra",
+        correct: false,
+        explanation: "O Manacá da Serra não é conhecido como 'Cacto-da-Páscoa'.",
+      },
+    ],
+  },
+  {
+    question: "06 - Qual é uma característica da Lobelia brasiliensis?",
+    answers: [
+      {
+        text: "Flores brancas",
+        correct: false,
+        explanation:
+          "A Lobelia brasiliensis possui flores de um azul intenso, não brancas.",
+      },
+      {
+        text: "Flores delicadas e vibrantes",
+        correct: true,
+        explanation:
+          "A Lobelia brasiliensis encanta com suas flores delicadas e de cor vibrante.",
+      },
+      {
+        text: "Raízes agressivas",
+        correct: false,
+        explanation: "A Lobelia brasiliensis não tem raízes agressivas.",
+      },
+      {
+        text: "Cresce em áreas de sombra total",
+        correct: false,
+        explanation: "A Lobelia brasiliensis cresce em várias condições, não apenas sombra total.",
+      },
+    ],
+  },
+  {
+    question: "07 - Qual é a vantagem de usar um vaso autoirrigável para a Monstera adansonii?",
+    answers: [
+      {
+        text: "Facilita o cultivo",
+        correct: true,
+        explanation:
+          "O vaso autoirrigável facilita o cultivo da Monstera adansonii, economizando tempo.",
+      },
+      {
+        text: "Aumenta a produção de flores",
+        correct: false,
+        explanation: "A Monstera adansonii é conhecida mais por suas folhas do que por flores.",
+      },
+      {
+        text: "Promove raízes agressivas",
+        correct: false,
+        explanation: "Um vaso autoirrigável não promove raízes agressivas.",
+      },
+      {
+        text: "Necessita de mais luz",
+        correct: false,
+        explanation: "Um vaso autoirrigável não altera a necessidade de luz da Monstera adansonii.",
+      },
+    ],
+  },
+  {
+    question: "08 - Qual ação é recomendada para a preservação da Lobelia brasiliensis?",
+    answers: [
+      {
+        text: "Expansão agrícola",
+        correct: false,
+        explanation:
+          "A expansão agrícola é um dos fatores que ameaçam a Lobelia brasiliensis.",
+      },
+      {
+        text: "Desmatamento controlado",
+        correct: false,
+        explanation: "O desmatamento contribui para o declínio da Lobelia brasiliensis.",
+      },
+      {
+        text: "Preservação do habitat natural",
+        correct: true,
+        explanation:
+          "Preservar o habitat natural é essencial para a sobrevivência da Lobelia brasiliensis.",
+      },
+      {
+        text: "Uso de pesticidas",
+        correct: false,
+        explanation: "O uso de pesticidas pode prejudicar ainda mais a Lobelia brasiliensis.",
+      },
+    ],
+  },
+  {
+    question: "09 - Para qual finalidade a Flor-de-Maio é comumente cultivada?",
+    answers: [
+      {
+        text: "Arborização urbana",
+        correct: false,
+        explanation:
+          "A Flor-de-Maio é mais comumente cultivada como planta ornamental em vasos e jardins.",
+      },
+      {
+        text: "Produção de frutos",
+        correct: false,
+        explanation: "A Flor-de-Maio não é cultivada para a produção de frutos.",
+      },
+      {
+        text: "Decoração de interiores",
+        correct: true,
+        explanation:
+          "A Flor-de-Maio é popularmente utilizada na decoração de interiores devido às suas flores chamativas.",
+      },
+      {
+        text: "Reflorestamento",
+        correct: false,
+        explanation: "A Flor-de-Maio não é geralmente utilizada em reflorestamento.",
+      },
+    ],
+  },
+  {
+    question: "10 - Por que as plantas carnívoras capturam insetos?",
+    answers: [
+      {
+        text: "Para diversão",
+        correct: false,
+        explanation:
+          "As plantas carnívoras capturam insetos para obter nutrientes, não por diversão.",
+      },
+      {
+        text: "Para obter nutrientes",
+        correct: true,
+        explanation:
+          "As plantas carnívoras se adaptaram a solos pobres em nutrientes e capturam insetos para suprir essa necessidade.",
+      },
+      {
+        text: "Para polinização",
+        correct: false,
+        explanation: "A principal função da captura de insetos não é a polinização.",
+      },
+      {
+        text: "Para competir com outras plantas",
+        correct: false,
+        explanation: "A captura de insetos não está relacionada à competição com outras plantas.",
       },
     ],
   },

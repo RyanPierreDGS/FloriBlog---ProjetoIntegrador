@@ -1,6 +1,12 @@
 /*----------------- botão de mudar o tema ------------------*/
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -97,4 +103,3 @@ body {
 }
 .fa-sun {
   color: #f39c12;
-} */

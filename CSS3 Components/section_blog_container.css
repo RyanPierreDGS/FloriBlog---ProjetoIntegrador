@@ -1,4 +1,4 @@
-#sec_blog-terceira{
+#sec_blog-terceira {
   margin-block: 0.5rem;
 }
 
@@ -23,16 +23,17 @@
   box-shadow: 6px 2px 15px gray;
 }
 
-#container_blog-cards.expanded, #sec_blog-terceira {
+#container_blog-cards.expanded,
+#sec_blog-terceira {
   overflow: visible;
 }
 
-#container_title-blog{
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 1000px;
+#container_title-blog {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 1000px;
 }
 
 #container_title-blog .title_sec {
@@ -118,22 +119,22 @@
 }
 
 .btn_card a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
-.btn_showMore{
-    position: relative;
-    top: 200px;
-    width: 240px;
-    height: 40px;
-    border-radius: 48px;
-    border: 1px solid rgba(98, 99, 71, 0.2);
-    color: #F0F4F0;
-    background: #6D8344;
-    font-weight: 500;
-    margin-inline: auto;
-    transition: width 0.9s ease;
+.btn_showMore {
+  position: relative;
+  top: 200px;
+  width: 240px;
+  height: 40px;
+  border-radius: 48px;
+  border: 1px solid rgba(98, 99, 71, 0.2);
+  color: #f0f4f0;
+  background: #6d8344;
+  font-weight: 500;
+  margin-inline: auto;
+  transition: width 0.9s ease;
 }
 
 .btn_showMore:hover {

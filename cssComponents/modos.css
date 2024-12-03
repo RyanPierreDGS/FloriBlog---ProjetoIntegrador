@@ -1,5 +1,5 @@
 /*----------------- botão de mudar o tema ------------------*/
-@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
 * {
   padding: 0px;
@@ -114,11 +114,11 @@ body.dark {
 }
 .fa-sun {
   color: #f39c12;
-}
+} */
 
 /*----------------- ////// ------------------*/
 
-.container {
+/* .container {
   width: 560px;
   text-align: center;
   padding: 25px;
@@ -207,4 +207,4 @@ h4 {
 
 .linkfs {
   font-size: 50px;
-}
+} */

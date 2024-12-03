@@ -28,7 +28,7 @@ function carregarCards() {
         const botao = document.createElement("button");
         botao.textContent = "Acessar Conteúdo";
         botao.addEventListener("click", function () {
-          window.location.href = "home.html";
+          window.location.href = info.slug;
         });
 
         card.appendChild(imagem);
@@ -43,3 +43,32 @@ function carregarCards() {
 }
 
 carregarCards();
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const container = document.getElementById("divInfoCards");
+//   const showMoreBtn = document.getElementById("btn_showMore");
+//   const cards = container.children;
+
+//   if (cards.length > 3) {
+//     showMoreBtn.style.display = "block";
+//     for (let i = 3; i < cards.length; i++) {
+//       cards[i].style.display = "none";
+//     }
+
+//     showMoreBtn.addEventListener("click", function () {
+//       if (showMoreBtn.textContent === "Ler mais...") {
+//         for (let i = 3; i < cards.length; i++) {
+//           cards[i].style.display = "flex";
+//         }
+//         showMoreBtn.textContent = "Mostrar menos";
+//       } else {
+//         for (let i = 3; i < cards.length; i++) {
+//           cards[i].style.display = "none";
+//         }
+//         showMoreBtn.textContent = "Ler mais...";
+//       }
+//     });
+//   } else {
+//     showMoreBtn.style.display = "none";
+//   }
+// });

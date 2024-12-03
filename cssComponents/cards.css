@@ -1,10 +1,10 @@
 #container_blog-cards {
   border: 1px solid rgba(98, 99, 71, 0.2);
   width: 90%;
-  max-width: 1280px;
   margin: auto;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 26px;
   box-shadow: 6px 2px 15px gray;
@@ -47,12 +47,6 @@
   width: 100%;
 }
 
-.card_image {
-  width: 95%;
-  max-height: 110px;
-  border-radius: 12px;
-}
-
 .divCard button {
   margin-inline: auto;
   width: 75%;
@@ -79,9 +73,14 @@
   color: white;
 }
 
-.btn_showMore {
+#divInfoCards img {
+  width: 90%;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+/* .btn_showMore {
   position: relative;
-  top: 200px;
   width: 240px;
   height: 40px;
   border-radius: 48px;
@@ -90,9 +89,9 @@
   background: #6d8344;
   font-weight: 500;
   margin-inline: auto;
-  transition: width 0.9s ease;
+  transition: width 0.3s ease;
 }
 
 .btn_showMore:hover {
-  width: 320px;
-}
+  width: 260px;
+} */

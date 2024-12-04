@@ -22,6 +22,7 @@
 }
 
 #navbarSupportedContent.scroll {
+  margin-block: 1.2rem;
   background-color: rgba(255, 255, 255, 0.9); /* Cor sólida */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   border-radius: 16px;

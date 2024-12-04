@@ -32,7 +32,7 @@ data.cards.forEach((card) => {
 <body>
     <nav class="navbar navbar-expand-lg" id="nav">
         <div class="container-fluid">
-            <a class="navbar-brand nav_logo fs-1 " href="home.html"><span class="flori">Flori</span><span
+            <a class="navbar-brand nav_logo fs-1 " href="../index.html"><span class="flori">Flori</span><span
                     class="blog">Blog</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -43,26 +43,16 @@ data.cards.forEach((card) => {
                 <ul class="navbar-nav mr-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
                         <a style="font-size: 20px; color: #718143;" class="nav-link active nav__nav-link linkfs p-4"
-                            aria-current="page" href="home.html">Home</a>
+                            aria-current="page" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a style="font-size: 20px; color: #718143;" class="nav-link active nav__nav-link linkfs p-4"
-                            href="./GameFlori.html">FloriGame</a>
+                            href="../FloriGame.html">FloriGame</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a style="font-size: 20px; color: #718143;"
-                            class="nav-link dropdown-toggle nav__nav-link linkfs p-4" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Curiosidades
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item nav__nav-link" href="#">-</a></li>
-                            <li><a class="dropdown-item nav__nav-link" href="#">-</a></li>
-                            <li>
-                                <hr class="dropdown-divider nav__nav-link">
-                            </li>
-                            <li><a class="dropdown-item nav__nav-link" href="#">-</a></li>
-                        </ul>
+
+                    <li class="nav-item">
+                        <a style="font-size: 20px; color: #718143;" class="nav-link active nav__nav-link linkfs p-4"
+                            href="../index.html">Curiosidades</a>
                     </li>
                 </ul>
             </div>
@@ -139,7 +129,7 @@ data.cards.forEach((card) => {
     <script src="../js/comentarios.js"></script>
 </body>
 
-</html>ss
+</html>
   `;
   fs.writeFileSync(path.join(__dirname, `card${card.id}.html`), htmlContent);
 });

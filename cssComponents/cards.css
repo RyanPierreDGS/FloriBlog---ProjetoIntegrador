@@ -8,19 +8,13 @@
   border: 1px solid rgba(98, 99, 71, 0.2);
   width: 90%;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  grid-template-rows: repeat(2, auto);
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 26px;
   box-shadow: 6px 2px 15px gray;
-}
-
-#container_blog-cards.expanded {
-  overflow: visible;
 }
 
 .divCard {
